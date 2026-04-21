@@ -1,153 +1,127 @@
-# Stage shortlists — AI for Chips (N=305, 2015–2026)
+# Stage shortlists — AI for Chips (N=298, 2015–2026)
 
-Surveys excluded: 4 (kw: survey/review/overview/tutorial/taxonomy). Manual false-positive exclusions: 12. Stage overrides applied: 6. Curated gists loaded: 52.
-Roles: **Anchor** = top-cited; **Exemplar** = best paper in an otherwise-uncovered (method, task) pair; **Recent** = high cites/year from 2023+; **Newest** = 2026 papers surfaced regardless of citation count (too new to rank).
+Surveys excluded: 4 (kw: survey/review/overview/tutorial/taxonomy). Manual false-positive exclusions: 19. Stage overrides applied: 6. Curated gists loaded: 55.
+Roles: **Anchor** = top-cited; **Exemplar** = best paper in an otherwise-uncovered (method, task) pair; **Recent** = high cites/year from 2023+; **Newest** = 2026 papers surfaced regardless of citation count (too new to rank); **Curator** = editorial pick for topical importance where citation-based selection would miss it.
 Stages with fewer than 10 papers are listed in full.
 
 ## Acronyms
 
-Expansions for terms used in the per-stage tables and gists. Edit this file and regenerate to update the glossary.
-
-### AI and machine learning
-
 | Acronym | Expansion |
 |---|---|
-| ANN | Artificial Neural Network |
-| BO | Bayesian Optimization |
-| CNN | Convolutional Neural Network |
-| DNN | Deep Neural Network |
-| GA | Genetic Algorithm |
-| GAN | Generative Adversarial Network |
-| GCN | Graph Convolutional Network |
-| GNN | Graph Neural Network |
-| INN | Invertible Neural Network |
-| KGE | Knowledge Graph Embedding |
-| KNN | k-Nearest Neighbours |
-| LDA | Linear Discriminant Analysis |
-| LLM | Large Language Model |
-| LSTM | Long Short-Term Memory |
-| MC | Monte Carlo |
-| MDP | Markov Decision Process |
-| ML | Machine Learning |
-| MLP | Multi-Layer Perceptron |
-| MOO | Multi-Objective Optimization |
-| PCA | Principal Component Analysis |
-| PINN | Physics-Informed Neural Network |
-| PI-LSTM | Physics-Informed Long Short-Term Memory |
-| QMC | Quasi-Monte Carlo |
-| RAG | Retrieval-Augmented Generation |
-| RL | Reinforcement Learning |
-| RNN | Recurrent Neural Network |
-| SAC | Soft Actor-Critic |
-| SVM | Support Vector Machine |
-| UQ | Uncertainty Quantification |
-
-### Chip design, EDA, and manufacturing tasks
-
-| Acronym | Expansion |
-|---|---|
+| ACM TODAES | ACM Transactions on Design Automation of Electronic Systems |
+| ADC | Analog-to-Digital Converter |
 | ALD | Atomic Layer Deposition |
+| ANN | Artificial Neural Network |
+| ASIC | Application-Specific Integrated Circuit |
+| BGA | Ball Grid Array |
+| BLSA | Bitline Sense Amplifier |
+| BO | Bayesian Optimization |
+| CFET | Complementary Field-Effect Transistor (stacked n/p-FET) |
+| CMOS | Complementary Metal-Oxide-Semiconductor |
 | CMP | Chemical-Mechanical Planarisation |
+| CNN | Convolutional Neural Network |
+| CRP | Challenge-Response Pair (PUF evaluation metric) |
+| CWT | Continuous Wavelet Transform |
+| DAC | Digital-to-Analog Converter |
 | DFM | Design for Manufacturing |
+| DNN | Deep Neural Network |
+| DPP | Digital Product Passport |
+| DRAM | Dynamic Random-Access Memory |
 | DRC | Design Rule Check |
 | DSE | Design Space Exploration |
 | DTCO | Design Technology Co-Optimization |
 | EDA | Electronic Design Automation |
+| EI | Expected Improvement (Bayesian optimization acquisition function) |
+| EM | Electromagnetic (side channel) |
 | EPE | Edge Placement Error |
-| GDSII | Graphic Data System Version II (chip layout format) |
-| HLS | High-Level Synthesis |
-| ILP | Integer Linear Programming |
-| ILT | Inverse Lithography Technique |
-| LVS | Layout vs. Schematic |
-| NoC | Network-on-Chip |
-| OPC | Optical Proximity Correction |
-| PHM | Prognostics and Health Management |
-| PnR | Place and Route |
-| RSMT | Rectilinear Steiner Minimum Tree |
-| RTL | Register-Transfer Level |
-| SMT | Satisfiability Modulo Theories |
-| STCO | System Technology Co-Optimization |
-| TAT | Turnaround Time |
-
-### Semiconductor and hardware context
-
-| Acronym | Expansion |
-|---|---|
-| ADC / DAC | Analog-to-Digital / Digital-to-Analog Converter |
-| ASIC | Application-Specific Integrated Circuit |
-| BGA | Ball Grid Array |
-| BLSA | Bitline Sense Amplifier |
-| CFET | Complementary Field-Effect Transistor (stacked n/p-FET) |
-| CMOS | Complementary Metal-Oxide-Semiconductor |
-| DRAM | Dynamic Random-Access Memory |
 | FBGA | Fine-pitch Ball Grid Array |
+| FEM | Finite Element Method |
+| FFT | Fast Fourier Transform |
 | FinFET | Fin Field-Effect Transistor |
+| FPR | False Positive Rate |
+| GA | Genetic Algorithm |
 | GaN | Gallium Nitride |
+| GAN | Generative Adversarial Network |
+| GCN | Graph Convolutional Network |
+| GDSII | Graphic Data System Version II (chip layout format) |
+| GNN | Graph Neural Network |
 | HBM | High-Bandwidth Memory |
 | HCD | Hot Carrier Degradation |
 | HEMT | High-Electron-Mobility Transistor |
-| IC | Integrated Circuit |
-| IGBT | Insulated-Gate Bipolar Transistor |
-| IR drop | Voltage drop across the power delivery network (I × R) |
-| ISA | Instruction Set Architecture |
-| LDO | Low-Dropout (voltage) regulator |
-| LNA | Low-Noise Amplifier |
-| M3D | Monolithic 3D integration |
-| MIV | Monolithic Inter-tier Via |
-| MOSFET | Metal-Oxide-Semiconductor Field-Effect Transistor |
-| MRAM | Magnetoresistive RAM |
-| MTJ | Magnetic Tunnel Junction |
-| NAND | NAND flash memory |
-| NBTI | Negative Bias Temperature Instability |
-| OTA | Operational Transconductance Amplifier |
-| PDN | Power Delivery Network |
-| PVT | Process, Voltage, Temperature (variations) |
-| RISC-V | open-source Reduced Instruction Set Computer v-ISA |
-| SDC | Silent Data Corruption |
-| SoC | System-on-Chip |
-| TSV | Through-Silicon Via |
-| UCIe | Universal Chiplet Interconnect Express |
-| VCO | Voltage-Controlled Oscillator |
-| VLSI | Very Large-Scale Integration |
-
-### Security and supply chain
-
-| Acronym | Expansion |
-|---|---|
-| CRP | Challenge-Response Pair (PUF evaluation metric) |
-| DPP | Digital Product Passport |
+| HLS | High-Level Synthesis |
 | HT | Hardware Trojan |
-| PUF | Physical Unclonable Function |
-
-### Signals, statistics, and methods
-
-| Acronym | Expansion |
-|---|---|
-| CWT | Continuous Wavelet Transform |
-| EI | Expected Improvement (BO acquisition function) |
-| EM | Electromagnetic (side channel) |
-| FEM | Finite Element Method |
-| FFT | Fast Fourier Transform |
-| LCB | Lower Confidence Bound (BO acquisition function) |
-| NISQ | Noisy Intermediate-Scale Quantum (computing era) |
-| PI | Probability of Improvement (BO acquisition function) |
-| TPR / FPR | True / False Positive Rate |
-
-### Venues, benchmarks, and datasets
-
-| Acronym | Expansion |
-|---|---|
-| ACM TODAES | ACM Transactions on Design Automation of Electronic Systems |
+| IC | Integrated Circuit |
 | ICCAD | IEEE/ACM International Conference on Computer-Aided Design (benchmarks from 2012, 2019) |
 | ICICA | International Conference on Intelligent Computing Applications |
 | ICSICT | International Conference on Solid-State and Integrated Circuit Technology |
 | IEEE TCAD | IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems |
 | IEEE TSM | IEEE Transactions on Semiconductor Manufacturing |
 | IEEE TVLSI | IEEE Transactions on Very Large Scale Integration (VLSI) Systems |
+| IGBT | Insulated-Gate Bipolar Transistor |
+| ILP | Integer Linear Programming |
+| ILT | Inverse Lithography Technique |
+| INN | Invertible Neural Network |
+| IR drop | Voltage drop across the power delivery network (I × R) |
 | IRPS | IEEE International Reliability Physics Symposium |
+| ISA | Instruction Set Architecture |
+| KGE | Knowledge Graph Embedding |
+| KNN | k-Nearest Neighbours |
+| LCB | Lower Confidence Bound (Bayesian optimization acquisition function) |
+| LDA | Linear Discriminant Analysis |
+| LDO | Low-Dropout (voltage) regulator |
+| LLM | Large Language Model |
+| LNA | Low-Noise Amplifier |
+| LSTM | Long Short-Term Memory |
+| LVS | Layout vs. Schematic |
+| M3D | Monolithic 3D integration |
 | MATES | German Conference on Multiagent System Technologies |
+| MC | Monte Carlo |
+| MDP | Markov Decision Process |
+| MIV | Monolithic Inter-tier Via |
+| ML | Machine Learning |
+| MLP | Multi-Layer Perceptron |
+| MOO | Multi-Objective Optimization |
+| MOSFET | Metal-Oxide-Semiconductor Field-Effect Transistor |
+| MRAM | Magnetoresistive RAM |
+| MTJ | Magnetic Tunnel Junction |
+| NAND | NAND flash memory |
+| NBTI | Negative Bias Temperature Instability |
+| NISQ | Noisy Intermediate-Scale Quantum (computing era) |
+| NoC | Network-on-Chip |
+| OPC | Optical Proximity Correction |
+| OTA | Operational Transconductance Amplifier |
+| PCA | Principal Component Analysis |
+| PDN | Power Delivery Network |
+| PHM | Prognostics and Health Management |
+| PI | Probability of Improvement (Bayesian optimization acquisition function) |
 | PICMET | Portland International Conference on Management of Engineering and Technology |
+| PI-LSTM | Physics-Informed Long Short-Term Memory |
+| PINN | Physics-Informed Neural Network |
+| PnR | Place and Route |
+| PUF | Physical Unclonable Function |
+| PVT | Process, Voltage, Temperature (variations) |
+| QMC | Quasi-Monte Carlo |
+| RAG | Retrieval-Augmented Generation |
+| RISC-V | open-source Reduced Instruction Set Computer v-ISA |
+| RL | Reinforcement Learning |
+| RNN | Recurrent Neural Network |
+| RO | Ring Oscillator (used as a process/voltage/temperature-sensitive sensor for side-channel analysis and aging monitoring) |
+| RSMT | Rectilinear Steiner Minimum Tree |
+| RTL | Register-Transfer Level |
+| SAC | Soft Actor-Critic |
+| SDC | Silent Data Corruption |
+| SMT | Satisfiability Modulo Theories |
+| SoC | System-on-Chip |
+| STCO | System Technology Co-Optimization |
+| SVM | Support Vector Machine |
+| TAT | Turnaround Time |
+| TPR | True Positive Rate |
 | Trust-HUB / TRIT-TC | Community hardware-trojan benchmark suites |
+| TSV | Through-Silicon Via |
+| UCIe | Universal Chiplet Interconnect Express |
+| UQ | Uncertainty Quantification |
+| VCO | Voltage-Controlled Oscillator |
+| VLSI | Very Large-Scale Integration |
 | WM-811K | Wafer Map dataset (811,457 wafer maps) |
 | WSC | Winter Simulation Conference |
 
@@ -173,7 +147,7 @@ The largest and most methodologically diverse stage (154 papers). Analog sizing 
 | Newest | 2026 | Ahmadzadeh M. | reinforcement_learning | analog_circuit_design | 5 | AnaCraft: Duel-Play Probabilistic-Model-Based Reinforcement Learning f… | First adversarial multi-agent RL for PVT-robust analog sizing; 3× fewer simulations and 2× runtime reduction vs. SOTA. | [10.1109/TCAD.2025.3582175](https://doi.org/10.1109/TCAD.2025.3582175) |
 | Newest | 2026 | Shen J. | llm_foundation_models | analog_circuit_design | 4 | Atelier: An Automated Analog Circuit Design Framework via Multiple Lar… | Multi-agent LLM with graph-of-thoughts and compact KB avoids costly domain fine-tuning while specializing each agent for a design sub-task. | [10.1109/TCAD.2025.3573228](https://doi.org/10.1109/TCAD.2025.3573228) |
 
-## Fabrication (n=72)
+## Fabrication (n=71)
 
 Fabrication clusters around two task families: mask / lithography optimization and wafer-level defect analytics. Computational lithography shows a clean methodological progression — GAN-OPC 2020 established learning-for-OPC, followed by Neural-ILT 2.0's end-to-end mask network, DevelSet's transformer + CUDA optimizer, and INN-ILT 2026's physics-embedded invertible network. Wafer-map and yield work is dominated by classical ML and early deep learning (Chiu's Mask R-CNN on WM-811K, Jang's DL yield predictor, Ciccazzo's SVM surrogate). Zhang J.'s 2026 work on mitigating errors in LLM-generated RTL straddles Design and Fabrication, hinting at an emerging cross-stage application of LLM debugging.
 
@@ -185,10 +159,11 @@ Fabrication clusters around two task families: mask / lithography optimization a
 | Exemplar | 2022 | Jiang B. | deep_learning | lithography_optimization | 39 | Neural-ILT 2.0: Migrating ILT to Domain-Specific and Multitask-Enabled… | Single NN for mask prediction + ILT correction, 15–30× TAT speedup over SOTA with better mask complexity. | [10.1109/TCAD.2021.3109556](https://doi.org/10.1109/TCAD.2021.3109556) |
 | Exemplar | 2019 | Jang S.J. | classical_ml | yield_prediction | 36 | A wafer map yield prediction based on machine learning for productivit… | DL predicts yield from wafer-map design at pre-production stage, guiding 8.59% higher-productivity wafer-map designs. | [10.1109/TSM.2019.2945482](https://doi.org/10.1109/TSM.2019.2945482) |
 | Exemplar | 2016 | Ciccazzo A. | bayesian_probabilistic; classical_ml | yield_prediction | 35 | A SVM surrogate model-based method for parametric yield optimization | SVM surrogate replaces SPICE calls in MC yield optimization; benchmarked against STMicro's industrial reference. | [10.1109/TCAD.2015.2501307](https://doi.org/10.1109/TCAD.2015.2501307) |
-| Recent | 2023 | Huang L. | classical_ml | defect_detection | 29 | Linear regression combined KNN algorithm to identify latent defects fo… | *(abstract unavailable — VPN read required)* | [10.1016/j.mejo.2022.105641](https://doi.org/10.1016/j.mejo.2022.105641) |
+| Recent | 2023 | Huang L. | classical_ml | defect_detection | 29 | Linear regression combined KNN algorithm to identify latent defects fo… | Linear regression extracts latent-defect features; KNN classifier distinguishes latent defects from benign process variation in manufacturing test. 32% accuracy improvement over other ML methods on early-life-failure screening by handling class imbalance in the data. | [10.1016/j.mejo.2022.105641](https://doi.org/10.1016/j.mejo.2022.105641) |
 | Recent | 2023 | Chen G. | deep_learning | lithography_optimization | 23 | DevelSet: Deep Neural Level Set for Instant Mask Optimization | Level-set representation + transformer NN + CUDA kernels delivers ~1s mask optimization with SOTA printability. | [10.1109/TCAD.2023.3286262](https://doi.org/10.1109/TCAD.2023.3286262) |
 | Newest | 2026 | Zhu B. | deep_learning | lithography_optimization | 0 | INN-ILT: Inverse Lithography Technique via Invertible Neural Network | Physics-embedded INN unifies forward lithography + inverse mask optimization in a single invertible network. | [10.1109/TCAD.2025.3650094](https://doi.org/10.1109/TCAD.2025.3650094) |
 | Newest | 2026 | Zhang J. | llm_foundation_models | logic_synthesis | 0 | Understanding and Mitigating Errors of LLM-Generated RTL Code | Categorizes failure modes of LLM-generated RTL code and fixes them with domain RAG, description rule-checking, and an iterative sim-debug loop; 98.1% on VerilogEval with Deepseek-v3.2. | [10.1109/TCAD.2026.3661446](https://doi.org/10.1109/TCAD.2026.3661446) |
+| Curator | 2025 | Seo J. | classical_ml | process_optimization | 4 | Deriving optimal atomic layer deposition process conditions using mach… | MLP + Gaussian process regression surrogate predicts partial pressure (an indicator of thin-film uniformity) for atomic layer deposition; RMSE 0.0074 and ~18× faster than CFD simulations. Introduces variance- and difference-based uniformity metrics to close the loop from prediction to optimal process conditions under pattern-loading effects in high-aspect-ratio advanced-node structures. (Only AI-for-ALD paper in the corpus — included as a Curator pick for topical whitespace.) | [10.1016/j.jii.2025.100879](https://doi.org/10.1016/j.jii.2025.100879) |
 
 ## Packaging (n=11)
 
@@ -197,8 +172,8 @@ A small stage (12 papers after curation) centred on 3D-IC physical design and ad
 | Role | Year | 1st author | Method | Task | Cites | Title | Gist | DOI |
 |---|---|---|---|---|---|---|---|---|
 | Anchor | 2023 | Kao S.X. | deep_learning; general_ml_signals | fault_diagnosis | 27 | Deep Learning-Based Positioning Error Fault Diagnosis of Wire Bonding… | DNN+CNN ensemble detects inappropriate wire-bonder bond-head installation from linear-encoder signals for predictive maintenance. | [10.1109/TSM.2023.3243775](https://doi.org/10.1109/TSM.2023.3243775) |
-| Anchor | 2015 | Vaisband I. | classical_ml | power_analysis | 11 | Energy efficient adaptive clustering of on-chip power delivery systems | *(abstract unavailable — VPN read required)* | [10.1016/j.vlsi.2014.06.003](https://doi.org/10.1016/j.vlsi.2014.06.003) |
-| Anchor | 2022 | Chatterjee S. | classical_ml | test_generation | 7 | Frequency-scaled thermal-aware test scheduling for 3D ICs using machin… | (pending — abstract unavailable from free APIs; VPN read required) | [10.1016/j.mejo.2022.105535](https://doi.org/10.1016/j.mejo.2022.105535) |
+| Anchor | 2015 | Vaisband I. | classical_ml | power_analysis | 11 | Energy efficient adaptive clustering of on-chip power delivery systems | Recursive polynomial-time clustering algorithm for co-designing heterogeneous on-chip power delivery systems (power-converter placement and regulator configuration); up to 21% power efficiency improvement on IBM power-grid benchmarks with orders-of-magnitude runtime speedup. (Symbolic/algorithmic — no learned ML model, despite classical_ml tag.) | [10.1016/j.vlsi.2014.06.003](https://doi.org/10.1016/j.vlsi.2014.06.003) |
+| Anchor | 2022 | Chatterjee S. | classical_ml | test_generation | 7 | Frequency-scaled thermal-aware test scheduling for 3D ICs using machin… | ML-based predictive thermal model for 3D ICs embedded in a frequency-scaled thermal-aware test scheduling algorithm; up to 60% test-time reduction on benchmark circuits by scaling test clock frequency within thermal constraints. | [10.1016/j.mejo.2022.105535](https://doi.org/10.1016/j.mejo.2022.105535) |
 | Exemplar | 2023 | Dewan M.I. | symbolic_reasoning | routing | 6 | Construction of All Multilayer Monolithic RSMTs and Its Application to… | Constructs all multilayer monolithic rectilinear Steiner minimum trees on the 3D Hanan grid, yielding a routing-topology database that accelerates MIV insertion for M3D-integrated ICs. (Symbolic / algorithmic, not learning-based.) | [10.1145/3626958](https://doi.org/10.1145/3626958) |
 | Exemplar | 2020 | Pittino F. | classical_ml; general_ml_signals | thermal_management | 5 | Robust Identification of Thermal Models for In-Production High-Perform… | Combines classical ML and deep learning to select workload traces suitable for thermal-model identification on in-production HPC systems; DL is necessary for correct trace selection up to 96% of the time, achieving sub-1°C compact-model accuracy. | [10.1109/TCAD.2019.2950378](https://doi.org/10.1109/TCAD.2019.2950378) |
 | Exemplar | 2023 | Vanna-Iampikul P. | classical_ml; graph_neural_networks | design_space_exploration | 5 | GNN-based Multi-bit Flip-flop Clustering and Post-clustering Design Op… | Unsupervised GNN-based flip-flop clustering merges single-bit FFs into multi-bit FFs, jointly optimizing 3D IC clock-network power and performance; integrated with a SOTA 3D flow, 18% total-power and 8.2% performance improvement. | [10.1145/3588570](https://doi.org/10.1145/3588570) |
@@ -219,21 +194,21 @@ Transit is almost entirely security-focused — every shortlisted paper targets 
 | Exemplar | 2025 | Narwariya A.S. | llm_foundation_models | reliability_analysis | 1 | Leveraging IO Pad Protection Diodes for Recycled IC Detection and Age… | Detects counterfeit recycled ICs and estimates chip age from voltage drop across existing IO-pad protection diodes, fit with polynomial regression; sensorless and zero-area-overhead, usable on deployed chips. | [10.1109/TVLSI.2025.3590317](https://doi.org/10.1109/TVLSI.2025.3590317) |
 | Recent | 2025 | Chen L. | graph_neural_networks | security_analysis | 12 | GNN4HT: A Two-Stage GNN-Based Approach for Hardware Trojan Multifuncti… | First two-stage GNN that goes beyond binary HT detection to classify HT function (80.95% gate-level, 62.96% RTL). | [10.1109/TCAD.2024.3428469](https://doi.org/10.1109/TCAD.2024.3428469) |
 | Recent | 2024 | Utyamishev D. | graph_neural_networks | security_analysis | 6 | Netwise Detection of Hardware Trojans Using Scalable Convolution of Gr… | Scalable netwise gate-level HT detection using a novel graph-convolution algorithm tailored to IC graphs; 96% recall / 86% precision on TrustHub TRIT-TC at 17k-gate scale, highlighting compromised nets in <0.1 s. | [10.1109/TCAD.2024.3383348](https://doi.org/10.1109/TCAD.2024.3383348) |
-| Newest | 2026 | Ghimire A. | classical_ml | security_analysis | 0 | AI-enabled image processing approach for efficient clustering and iden… | *(abstract unavailable — VPN read required)* | [10.1016/j.vlsi.2025.102628](https://doi.org/10.1016/j.vlsi.2025.102628) |
+| Newest | 2026 | Ghimire A. | classical_ml | security_analysis | 0 | AI-enabled image processing approach for efficient clustering and iden… | Ring-oscillator side-channel data rendered as images; unsupervised image clustering detects hardware-trojan insertion at 95% accuracy with no golden-reference IC required. | [10.1016/j.vlsi.2025.102628](https://doi.org/10.1016/j.vlsi.2025.102628) |
 
-## In-Field (n=55)
+## In-Field (n=49)
 
 The most task-diverse stage — covering aging and reliability prediction, post-silicon validation, runtime security, and quantum-circuit fidelity. Mao 2022's ML for BGA board-level drop response anchors by citation but is physically transit-adjacent. Physics-informed ML is the emerging methodological theme: de Jong 2025's PI-LSTM for solder fatigue and Wu 2026's PINN-LSTM for NBTI/HCD coupled aging. Rahmani 2017 (post-silicon trace-signal selection) and Bathla 2023 (Bayesian reliability of combinational circuits) cover validation workflows. Elnaggar 2019's runtime HT detection via changepoint anomaly analysis on performance counters complements the pre-silicon HT work in Transit — a full-lifecycle HT story emerges when the two are paired. Saravanan 2023's GNN for NISQ quantum-circuit reliability is a domain outlier but shows the ML-for-reliability template generalizing beyond CMOS.
 
 | Role | Year | 1st author | Method | Task | Cites | Title | Gist | DOI |
 |---|---|---|---|---|---|---|---|---|
-| Anchor | 2022 | Mao M. | classical_ml | reliability_analysis | 30 | Machine learning for board-level drop response of BGA packaging struct… | *(abstract unavailable — VPN read required)* | [10.1016/j.microrel.2022.114553](https://doi.org/10.1016/j.microrel.2022.114553) |
+| Anchor | 2022 | Mao M. | classical_ml | reliability_analysis | 30 | Machine learning for board-level drop response of BGA packaging struct… | Back-propagation DNN replaces finite-element simulation for 3D board-level drop-response prediction on BGA solder joints; 3+ orders of magnitude faster than FE, Pearson >0.95 for stress/strain/warpage prediction. Handles surface, line, and point contact drop types and generalizes to drop angles outside the training distribution. | [10.1016/j.microrel.2022.114553](https://doi.org/10.1016/j.microrel.2022.114553) |
 | Anchor | 2017 | Rahmani K. | classical_ml | verification | 26 | Postsilicon Trace Signal Selection Using Machine Learning Techniques | ML trained on few simulation runs replaces expensive full simulation in trace-signal selection; up to 143% restorability improvement. | [10.1109/TVLSI.2016.2593902](https://doi.org/10.1109/TVLSI.2016.2593902) |
 | Anchor | 2019 | Elnaggar R. | anomaly_detection | security_analysis | 25 | Hardware Trojan Detection Using Changepoint-Based Anomaly Detection Te… | Changepoint anomaly detection on perf counters catches HT activation at runtime; >99% TPR on OpenSPARC T1 FPGA prototype. | [10.1109/TVLSI.2019.2925807](https://doi.org/10.1109/TVLSI.2019.2925807) |
-| Exemplar | 2023 | Ma X. | classical_ml | security_analysis | 21 | Machine learning attacks resistant strong PUF design utilizing respons… | *(abstract unavailable — VPN read required)* | [10.1016/j.mejo.2023.105977](https://doi.org/10.1016/j.mejo.2023.105977) |
-| Exemplar | 2018 | Ye X. | llm_foundation_models | reliability_analysis | 14 | Manufacturing process-based storage degradation modelling and reliabil… | (pending — abstract unavailable from free APIs; VPN read required) | [10.1016/j.microrel.2018.06.085](https://doi.org/10.1016/j.microrel.2018.06.085) |
 | Exemplar | 2023 | Saravanan V. | deep_learning; general_ml_signals; graph_neural_networks | reliability_analysis | 12 | Data-Driven Reliability Models of Quantum Circuit: From Traditional ML… | GNN-based fidelity prediction on IBM Q Guadalupe; drives gate rescheduling without prior calibration circuits. | [10.1109/TCAD.2022.3202430](https://doi.org/10.1109/TCAD.2022.3202430) |
+| Exemplar | 2023 | Bathla S. | bayesian_probabilistic | reliability_analysis | 10 | A Framework for Reliability Analysis of Combinational Circuits Using A… | Bayesian inference on a four-valued (correct/incorrect) signal representation replaces the XOR-gate dual-circuit model for output error-rate estimation; sum-product belief propagation gives consistent scaling with gate error probabilities. | [10.1109/TVLSI.2023.3237885](https://doi.org/10.1109/TVLSI.2023.3237885) |
+| Exemplar | 2023 | Hou T. | deep_learning | reliability_analysis | 10 | A Deep Learning Framework for Solving Stress-based Partial Differentia… | Physics-informed neural network for solving stress-based PDEs that govern electromigration in VLSI interconnect trees; mesh-free solutions via automatic differentiation handle varying atom diffusivity per segment during the void nucleation phase, with accuracy comparable to traditional EM solvers at lower computational cost. | [10.1145/3567424](https://doi.org/10.1145/3567424) |
 | Recent | 2025 | de Jong S.D.M. | classical_ml | reliability_analysis | 8 | Solder joint reliability predictions using physics-informed machine le… | PI-LSTM predicts solder plastic strain + cycles-to-failure at FEM-matching accuracy for power-electronics reliability. | [10.1016/j.microrel.2025.115797](https://doi.org/10.1016/j.microrel.2025.115797) |
-| Recent | 2023 | Bathla S. | bayesian_probabilistic | reliability_analysis | 10 | A Framework for Reliability Analysis of Combinational Circuits Using A… | Bayesian inference on a four-valued (correct/incorrect) signal representation replaces the XOR-gate dual-circuit model for output error-rate estimation; sum-product belief propagation gives consistent scaling with gate error probabilities. | [10.1109/TVLSI.2023.3237885](https://doi.org/10.1109/TVLSI.2023.3237885) |
+| Recent | 2023 | Dong X. | deep_learning | power_analysis | 9 | Worst-case Power Integrity Prediction Using Convolutional Neural Netwo… | CNN-based framework for worst-case power integrity prediction on power delivery networks; reduces spatial and temporal redundancy in the PDN and input-current vectors, then uses a custom CNN architecture. 25-69× speedup over commercial tools at 0.6-1.0% relative error for dynamic-noise prediction, 24-64× at 0.2-1.1% for bump-current prediction. (Stage-imprecise in In-Field: PDN sign-off is typically a design-phase task.) | [10.1145/3564932](https://doi.org/10.1145/3564932) |
 | Newest | 2026 | Wu Z. | deep_learning | fault_diagnosis | 0 | Neural network approach to NBTI/HCD coupled failure analysis of MOS IC… | Physics-informed NN-LSTM on 2D voltage plane models coupled NBTI/HCD aging; 11.92% avg error vs. experiments, 8.6% RO frequency error. | [10.1016/j.microrel.2025.115996](https://doi.org/10.1016/j.microrel.2025.115996) |
-| Newest | 2026 | Benmahdjoub M.A. | deep_learning | thermal_management | 0 | Hybrid junction temperature prediction of IGBTs combining detailed ele… | (pending — abstract unavailable from free APIs; VPN read required) | [10.1016/j.mejo.2026.107133](https://doi.org/10.1016/j.mejo.2026.107133) |
+| Newest | 2026 | Benmahdjoub M.A. | deep_learning | thermal_management | 0 | Hybrid junction temperature prediction of IGBTs combining detailed ele… | Physics-informed ML (Random Forest, Feedforward NN with SCG and Adam, RNN) for IGBT junction-temperature prediction trained on Hefner electro-thermal model simulation data; RNN achieves RMSE <0.5 K, R² ≈ 0.9. (IGBT = power semiconductor, not CMOS IC; in scope under a broad AI-for-semiconductor definition.) | [10.1016/j.mejo.2026.107133](https://doi.org/10.1016/j.mejo.2026.107133) |

@@ -21,7 +21,7 @@ Use this table to find the right citation for each paper mentioned in the drafts
 | Otte 2019 | `Otte2019` | [13] | An ontological approach to representing the product life cycle |
 | Wawrzik 2023 | `Wawrzik2023` | [14] | Ontology Module Suite for Electronics and Systems Engineering |
 
-## Shortlist papers [15]–[66]
+## Shortlist papers [15]–[67]
 
 | Author Year (as used in drafts) | BibTeX key | Ref # | Title |
 |---|---|---|---|
@@ -50,30 +50,31 @@ Use this table to find the right citation for each paper mentioned in the drafts
 | Chen G. 2023 | `Chen2023` | [37] | DevelSet: Deep Neural Level Set for Instant Mask Optimization |
 | Zhu B. 2026 | `Zhu2026` | [38] | INN-ILT: Inverse Lithography Technique via Invertible Neural Network |
 | Zhang J. 2026 | `Zhang2026` | [39] | Understanding and Mitigating Errors of LLM-Generated RTL Code |
-| Kao S.X. 2023 | `Kao2023` | [40] | Deep Learning-Based Positioning Error Fault Diagnosis of Wire Bonding  |
-| Vaisband I. 2015 | `PartinVaisband2015` | [41] | Energy efficient adaptive clustering of on-chip power delivery systems |
-| Chatterjee S. 2022 | `Chatterjee2022` | [42] | Frequency-scaled thermal-aware test scheduling for 3D ICs using machin |
-| Dewan M.I. 2023 | `Dewan2023` | [43] | Construction of All Multilayer Monolithic RSMTs and Its Application to |
-| Pittino F. 2020 | `Pittino2020` | [44] | Robust Identification of Thermal Models for In-Production High-Perform |
-| Vanna-Iampikul P. 2023 | `VannaIampikul2023` | [45] | GNN-based Multi-bit Flip-flop Clustering and Post-clustering Design Op |
-| Yan H. 2025 | `Wang2025` | [46] | A Lightweight Heterogeneous Graph Embedding Framework for Hotspot Dete |
-| Wu J.S. 2023 | `Wu2023a` | [47] | ILP-based Substrate Routing with Mismatched Via Dimension Consideratio |
-| Chen X. 2026 | `Chen2026` | [48] | A Physics-Informed Neural Network Surrogate for Runtime PDN and Dynami |
-| Yasaei R. 2022 | `Yasaei2022` | [49] | Golden Reference-Free Hardware Trojan Localization Using Graph Convolu |
-| Yasaei R. 2025 | `Yasaei2025` | [50] | Hardware Trojan Detection Using Graph Neural Networks |
-| Stern A. 2020 | `Stern2020` | [51] | EMFORCED: EM-Based Fingerprinting Framework for Remarked and Cloned Co |
-| Popryho Y. 2025 | `Popryho2025` | [52] | NetVGE: Netwise Hardware Trojan Detection at RTL Using Variable Depend |
-| Narwariya A.S. 2025 | `Narwariya2025` | [53] | Leveraging IO Pad Protection Diodes for Recycled IC Detection and Age  |
-| Chen L. 2025 | `Dong2025` | [54] | GNN4HT: A Two-Stage GNN-Based Approach for Hardware Trojan Multifuncti |
-| Utyamishev D. 2024 | `Utyamishev2024` | [55] | Netwise Detection of Hardware Trojans Using Scalable Convolution of Gr |
-| Ghimire A. 2026 | `Ghimire2026` | [56] | AI-enabled image processing approach for efficient clustering and iden |
-| Mao M. 2022 | `Mao2022` | [57] | Machine learning for board-level drop response of BGA packaging struct |
-| Rahmani K. 2017 | `Rahmani2017` | [58] | Postsilicon Trace Signal Selection Using Machine Learning Techniques |
-| Elnaggar R. 2019 | `Elnaggar2019` | [59] | Hardware Trojan Detection Using Changepoint-Based Anomaly Detection Te |
-| Ma X. 2023 | `Ma2023` | [60] | Machine learning attacks resistant strong PUF design utilizing respons |
-| Ye X. 2018 | `Ye2018` | [61] | Manufacturing process-based storage degradation modelling and reliabil |
-| Saravanan V. 2023 | `Saravanan2023` | [62] | Data-Driven Reliability Models of Quantum Circuit: From Traditional ML |
-| de Jong S.D.M. 2025 | `Jong2025` | [63] | Solder joint reliability predictions using physics-informed machine le |
-| Bathla S. 2023 | `Bathla2023` | [64] | A Framework for Reliability Analysis of Combinational Circuits Using A |
-| Wu Z. 2026 | `Wu2026` | [65] | Neural network approach to NBTI/HCD coupled failure analysis of MOS IC |
-| Benmahdjoub M.A. 2026 | `Benmahdjoub2026` | [66] | Hybrid junction temperature prediction of IGBTs combining detailed ele |
+| Seo J. 2025 | `Seo2025` | [40] | Deriving optimal atomic layer deposition process conditions using mach |
+| Kao S.X. 2023 | `Kao2023` | [41] | Deep Learning-Based Positioning Error Fault Diagnosis of Wire Bonding  |
+| Vaisband I. 2015 | `PartinVaisband2015` | [42] | Energy efficient adaptive clustering of on-chip power delivery systems |
+| Chatterjee S. 2022 | `Chatterjee2022` | [43] | Frequency-scaled thermal-aware test scheduling for 3D ICs using machin |
+| Dewan M.I. 2023 | `Dewan2023` | [44] | Construction of All Multilayer Monolithic RSMTs and Its Application to |
+| Pittino F. 2020 | `Pittino2020` | [45] | Robust Identification of Thermal Models for In-Production High-Perform |
+| Vanna-Iampikul P. 2023 | `VannaIampikul2023` | [46] | GNN-based Multi-bit Flip-flop Clustering and Post-clustering Design Op |
+| Yan H. 2025 | `Wang2025` | [47] | A Lightweight Heterogeneous Graph Embedding Framework for Hotspot Dete |
+| Wu J.S. 2023 | `Wu2023a` | [48] | ILP-based Substrate Routing with Mismatched Via Dimension Consideratio |
+| Chen X. 2026 | `Chen2026` | [49] | A Physics-Informed Neural Network Surrogate for Runtime PDN and Dynami |
+| Yasaei R. 2022 | `Yasaei2022` | [50] | Golden Reference-Free Hardware Trojan Localization Using Graph Convolu |
+| Yasaei R. 2025 | `Yasaei2025` | [51] | Hardware Trojan Detection Using Graph Neural Networks |
+| Stern A. 2020 | `Stern2020` | [52] | EMFORCED: EM-Based Fingerprinting Framework for Remarked and Cloned Co |
+| Popryho Y. 2025 | `Popryho2025` | [53] | NetVGE: Netwise Hardware Trojan Detection at RTL Using Variable Depend |
+| Narwariya A.S. 2025 | `Narwariya2025` | [54] | Leveraging IO Pad Protection Diodes for Recycled IC Detection and Age  |
+| Chen L. 2025 | `Dong2025` | [55] | GNN4HT: A Two-Stage GNN-Based Approach for Hardware Trojan Multifuncti |
+| Utyamishev D. 2024 | `Utyamishev2024` | [56] | Netwise Detection of Hardware Trojans Using Scalable Convolution of Gr |
+| Ghimire A. 2026 | `Ghimire2026` | [57] | AI-enabled image processing approach for efficient clustering and iden |
+| Mao M. 2022 | `Mao2022` | [58] | Machine learning for board-level drop response of BGA packaging struct |
+| Rahmani K. 2017 | `Rahmani2017` | [59] | Postsilicon Trace Signal Selection Using Machine Learning Techniques |
+| Elnaggar R. 2019 | `Elnaggar2019` | [60] | Hardware Trojan Detection Using Changepoint-Based Anomaly Detection Te |
+| Saravanan V. 2023 | `Saravanan2023` | [61] | Data-Driven Reliability Models of Quantum Circuit: From Traditional ML |
+| Bathla S. 2023 | `Bathla2023` | [62] | A Framework for Reliability Analysis of Combinational Circuits Using A |
+| Hou T. 2023 | `Hou2023` | [63] | A Deep Learning Framework for Solving Stress-based Partial Differentia |
+| de Jong S.D.M. 2025 | `Jong2025` | [64] | Solder joint reliability predictions using physics-informed machine le |
+| Dong X. 2023 | `Dong2023` | [65] | Worst-case Power Integrity Prediction Using Convolutional Neural Netwo |
+| Wu Z. 2026 | `Wu2026` | [66] | Neural network approach to NBTI/HCD coupled failure analysis of MOS IC |
+| Benmahdjoub M.A. 2026 | `Benmahdjoub2026` | [67] | Hybrid junction temperature prediction of IGBTs combining detailed ele |
