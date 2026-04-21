@@ -1,0 +1,53 @@
+stage,role,year,author,title,doi,status,oa_version,oa_license,filename,notes
+Design,Anchor,2024,Thakur S.,VeriGen: A Large Language Model for Verilog Code Generation,10.1145/3643681,paywall,,,,no OA location
+Design,Anchor,2020,Li Y.,An Artificial Neural Network Assisted Optimization System for Analog D…,10.1109/TCAD.2019.2961322,paywall,,,,no OA location
+Design,Anchor,2024,Wu H.,ChatEDA: A Large Language Model Powered Autonomous Agent for EDA,10.1109/TCAD.2024.3383347,paywall,,,,no OA location
+Design,Anchor,2022,Zhang S.,An Efficient Batch-Constrained Bayesian Optimization Approach for Anal…,10.1109/TCAD.2021.3054811,downloaded,submittedVersion,,Design_2022_Zhang_An_Efficient_Batch_Constrained_Bayesian_Optim.pdf,ok_1431259B
+Design,Anchor,2021,Lin Y.,DREAMPlace: Deep Learning Toolkit-Enabled GPU Acceleration for Modern…,10.1109/TCAD.2020.3003843,paywall,,,,no OA location
+Design,Exemplar,2022,Budak A.F.,An Efficient Analog Circuit Sizing Method Based on Machine Learning As…,10.1109/TCAD.2021.3081405,download_failed,acceptedVersion,cc-by-sa,,fetch_error_HTTP Error 404: Not Found
+Design,Exemplar,2022,Settaluri K.,Automated Design of Analog Circuits Using Reinforcement Learning,10.1109/TCAD.2021.3120547,paywall,,,,no OA location
+Design,Exemplar,2022,Zhou R.,An Analog Circuit Design and Optimization System With Rule-Guided Gene…,10.1109/TCAD.2022.3166637,paywall,,,,no OA location
+Design,Exemplar,2023,Wu N.,IronMan-Pro: Multiobjective Design Space Exploration in HLS via Reinfo…,10.1109/TCAD.2022.3185540,paywall,,,,no OA location
+Design,Exemplar,2022,Xu Q.,GoodFloorplan: Graph Convolutional Network and Reinforcement Learning-…,10.1109/TCAD.2021.3131550,paywall,,,,no OA location
+Design,Exemplar,2021,Cheng C.K.,Complementary-FET (CFET) Standard Cell Synthesis Framework for Design…,10.1109/TVLSI.2021.3065639,paywall,,,,no OA location
+Design,Recent,2025,Liu B.,LayoutCopilot: An LLM-Powered Multiagent Collaborative Framework for I…,10.1109/TCAD.2025.3529805,paywall,,,,no OA location
+Design,Recent,2023,Wei J.,A New Compact MOSFET Model Based on Artificial Neural Network With Uni…,10.1109/TCAD.2022.3193330,paywall,,,,no OA location
+Design,Newest,2026,Ahmadzadeh M.,AnaCraft: Duel-Play Probabilistic-Model-Based Reinforcement Learning f…,10.1109/TCAD.2025.3582175,paywall,,,,no OA location
+Design,Newest,2026,Shen J.,Atelier: An Automated Analog Circuit Design Framework via Multiple Lar…,10.1109/TCAD.2025.3573228,paywall,,,,no OA location
+Fabrication,Anchor,2020,Yang H.,GAN-OPC: Mask Optimization with Lithography-Guided Generative Adversar…,10.1109/TCAD.2019.2939329,paywall,,,,no OA location
+Fabrication,Anchor,2021,Chiu M.C.,Applying Data Augmentation and Mask R-CNN-Based Instance Segmentation…,10.1109/TSM.2021.3118922,paywall,,,,no OA location
+Fabrication,Anchor,2021,Cheng K.C.C.,Machine Learning-Based Detection Method for Wafer Test Induced Defects,10.1109/TSM.2021.3065405,paywall,,,,no OA location
+Fabrication,Exemplar,2022,Jiang B.,Neural-ILT 2.0: Migrating ILT to Domain-Specific and Multitask-Enabled…,10.1109/TCAD.2021.3109556,paywall,,,,no OA location
+Fabrication,Exemplar,2019,Jang S.J.,A wafer map yield prediction based on machine learning for productivit…,10.1109/TSM.2019.2945482,paywall,,,,no OA location
+Fabrication,Exemplar,2016,Ciccazzo A.,A SVM surrogate model-based method for parametric yield optimization,10.1109/TCAD.2015.2501307,paywall,,,,no OA location
+Fabrication,Recent,2023,Huang L.,Linear regression combined KNN algorithm to identify latent defects fo…,10.1016/j.mejo.2022.105641,paywall,,,,no OA location
+Fabrication,Recent,2023,Chen G.,DevelSet: Deep Neural Level Set for Instant Mask Optimization,10.1109/TCAD.2023.3286262,paywall,,,,no OA location
+Fabrication,Newest,2026,Zhu B.,INN-ILT: Inverse Lithography Technique via Invertible Neural Network,10.1109/TCAD.2025.3650094,paywall,,,,no OA location
+Fabrication,Newest,2026,Zhang J.,Understanding and Mitigating Errors of LLM-Generated RTL Code,10.1109/TCAD.2026.3661446,paywall,,,,no OA location
+Packaging,Anchor,2023,Kao S.X.,Deep Learning-Based Positioning Error Fault Diagnosis of Wire Bonding…,10.1109/TSM.2023.3243775,paywall,,,,no OA location
+Packaging,Anchor,2015,Vaisband I.,Energy efficient adaptive clustering of on-chip power delivery systems,10.1016/j.vlsi.2014.06.003,paywall,,,,no OA location
+Packaging,Anchor,2022,Chatterjee S.,Frequency-scaled thermal-aware test scheduling for 3D ICs using machin…,10.1016/j.mejo.2022.105535,paywall,,,,no OA location
+Packaging,Exemplar,2023,Dewan M.I.,Construction of All Multilayer Monolithic RSMTs and Its Application to…,10.1145/3626958,download_failed,publishedVersion,,,fetch_error_HTTP Error 403: Forbidden
+Packaging,Exemplar,2020,Pittino F.,Robust Identification of Thermal Models for In-Production High-Perform…,10.1109/TCAD.2019.2950378,downloaded,submittedVersion,,Packaging_2020_Pittino_Robust_Identification_of_Thermal_Models_for_I.pdf,ok_3982893B
+Packaging,Exemplar,2023,Vanna-Iampikul P.,GNN-based Multi-bit Flip-flop Clustering and Post-clustering Design Op…,10.1145/3588570,downloaded,publishedVersion,,Packaging_2023_Vanna-Iampikul_GNN_based_Multi_bit_Flip_flop_Clustering_and.pdf,ok_2923387B
+Packaging,Recent,2025,Yan H.,A Lightweight Heterogeneous Graph Embedding Framework for Hotspot Dete…,10.1109/TCAD.2025.3543436,paywall,,,,no OA location
+Packaging,Recent,2023,Wu J.S.,ILP-based Substrate Routing with Mismatched Via Dimension Consideratio…,10.1145/3579843,paywall,,,,no OA location
+Packaging,Newest,2026,Chen X.,A Physics-Informed Neural Network Surrogate for Runtime PDN and Dynami…,10.1109/TVLSI.2025.3650633,paywall,,,,no OA location
+Transit,Anchor,2022,Yasaei R.,Golden Reference-Free Hardware Trojan Localization Using Graph Convolu…,10.1109/TVLSI.2022.3191683,paywall,,,,no OA location
+Transit,Anchor,2025,Yasaei R.,Hardware Trojan Detection Using Graph Neural Networks,10.1109/TCAD.2022.3178355,paywall,,,,no OA location
+Transit,Anchor,2020,Stern A.,EMFORCED: EM-Based Fingerprinting Framework for Remarked and Cloned Co…,10.1109/TVLSI.2019.2949733,paywall,,,,no OA location
+Transit,Exemplar,2025,Popryho Y.,NetVGE: Netwise Hardware Trojan Detection at RTL Using Variable Depend…,10.1109/TCAD.2025.3569492,paywall,,,,no OA location
+Transit,Exemplar,2025,Narwariya A.S.,Leveraging IO Pad Protection Diodes for Recycled IC Detection and Age…,10.1109/TVLSI.2025.3590317,paywall,,,,no OA location
+Transit,Recent,2025,Chen L.,GNN4HT: A Two-Stage GNN-Based Approach for Hardware Trojan Multifuncti…,10.1109/TCAD.2024.3428469,download_failed,publishedVersion,cc-by,,not_pdf_ctype=text/html;charset=UTF-8
+Transit,Recent,2024,Utyamishev D.,Netwise Detection of Hardware Trojans Using Scalable Convolution of Gr…,10.1109/TCAD.2024.3383348,downloaded,publishedVersion,cc-by,Transit_2024_Utyamishev_Netwise_Detection_of_Hardware_Trojans_Using_S.pdf,ok_1567043B
+Transit,Newest,2026,Ghimire A.,AI-enabled image processing approach for efficient clustering and iden…,10.1016/j.vlsi.2025.102628,paywall,,,,no OA location
+In-Field,Anchor,2022,Mao M.,Machine learning for board-level drop response of BGA packaging struct…,10.1016/j.microrel.2022.114553,paywall,,,,no OA location
+In-Field,Anchor,2017,Rahmani K.,Postsilicon Trace Signal Selection Using Machine Learning Techniques,10.1109/TVLSI.2016.2593902,paywall,,,,no OA location
+In-Field,Anchor,2019,Elnaggar R.,Hardware Trojan Detection Using Changepoint-Based Anomaly Detection Te…,10.1109/TVLSI.2019.2925807,paywall,,,,no OA location
+In-Field,Exemplar,2023,Ma X.,Machine learning attacks resistant strong PUF design utilizing respons…,10.1016/j.mejo.2023.105977,paywall,,,,no OA location
+In-Field,Exemplar,2018,Ye X.,Manufacturing process-based storage degradation modelling and reliabil…,10.1016/j.microrel.2018.06.085,paywall,,,,no OA location
+In-Field,Exemplar,2023,Saravanan V.,Data-Driven Reliability Models of Quantum Circuit: From Traditional ML…,10.1109/TCAD.2022.3202430,paywall,,,,no OA location
+In-Field,Recent,2025,de Jong S.D.M.,Solder joint reliability predictions using physics-informed machine le…,10.1016/j.microrel.2025.115797,download_failed,publishedVersion,cc-by,,not_pdf_ctype=text/html;charset=UTF-8
+In-Field,Recent,2023,Bathla S.,A Framework for Reliability Analysis of Combinational Circuits Using A…,10.1109/TVLSI.2023.3237885,paywall,,,,no OA location
+In-Field,Newest,2026,Wu Z.,Neural network approach to NBTI/HCD coupled failure analysis of MOS IC…,10.1016/j.microrel.2025.115996,download_failed,publishedVersion,cc-by-nc-nd,,not_pdf_ctype=text/html;charset=UTF-8
+In-Field,Newest,2026,Benmahdjoub M.A.,Hybrid junction temperature prediction of IGBTs combining detailed ele…,10.1016/j.mejo.2026.107133,paywall,,,,no OA location
