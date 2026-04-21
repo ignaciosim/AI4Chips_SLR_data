@@ -1,0 +1,64 @@
+======================================================================
+ONTOLOGY-BASED CLASSIFICATION SUMMARY
+======================================================================
+
+Total papers: 5531
+
+Classification distribution:
+  unclassified        : 2590 ( 46.8%)
+  ai_for_chips        : 2548 ( 46.1%)
+  ambiguous           :  275 (  5.0%)
+  chips_for_ai        :  110 (  2.0%)
+  both                :    8 (  0.1%)
+
+Confidence distribution:
+  low                 : 5078 ( 91.8%)
+  high                :  345 (  6.2%)
+  medium              :  108 (  2.0%)
+
+Breakdown by lifecycle phase:
+
+  design (n=2296):
+    ai_for_chips        : 1158 ( 50.4%)
+    unclassified        :  961 ( 41.9%)
+    ambiguous           :  102 (  4.4%)
+    chips_for_ai        :   69 (  3.0%)
+    both                :    6 (  0.3%)
+
+  fabrication (n=1007):
+    unclassified        :  524 ( 52.0%)
+    ai_for_chips        :  416 ( 41.3%)
+    ambiguous           :   52 (  5.2%)
+    chips_for_ai        :   15 (  1.5%)
+
+  packaging (n=424):
+    unclassified        :  241 ( 56.8%)
+    ai_for_chips        :  129 ( 30.4%)
+    ambiguous           :   32 (  7.5%)
+    chips_for_ai        :   21 (  5.0%)
+    both                :    1 (  0.2%)
+
+  transit (n=144):
+    ai_for_chips        :   76 ( 52.8%)
+    unclassified        :   63 ( 43.8%)
+    ambiguous           :    5 (  3.5%)
+
+  in_field (n=1649):
+    unclassified        :  796 ( 48.3%)
+    ai_for_chips        :  764 ( 46.3%)
+    ambiguous           :   83 (  5.0%)
+    chips_for_ai        :    5 (  0.3%)
+    both                :    1 (  0.1%)
+
+  disposal (n=11):
+    unclassified        :    5 ( 45.5%)
+    ai_for_chips        :    5 ( 45.5%)
+    ambiguous           :    1 (  9.1%)
+
+======================================================================
+PRECISION ESTIMATE
+======================================================================
+  Keyword baseline precision:      ~98.0%
+  Papers flagged as chips-for-AI:    110
+  Papers after noise removal:        5421
+  Noise removal rate:                2.0%

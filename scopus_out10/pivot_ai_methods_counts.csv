@@ -1,0 +1,14 @@
+method,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026
+anomaly_detection,0,0,0,0,1,3,0,0,2,0,0,0
+bayesian_probabilistic,1,2,1,4,1,4,1,7,7,4,8,8
+classical_ml,4,1,4,2,4,5,9,12,16,16,11,9
+deep_learning,0,0,2,6,10,8,21,19,31,29,48,26
+evolutionary_optimization,1,5,1,2,1,3,0,3,4,3,12,2
+general_ml_signals,0,3,2,1,2,1,4,3,11,4,13,10
+generative_adversarial,2,4,8,6,5,7,5,4,9,10,17,10
+graph_neural_networks,0,0,0,0,0,0,0,7,11,8,15,8
+llm_foundation_models,4,5,1,5,2,4,2,7,4,7,33,20
+reinforcement_learning,0,0,0,0,0,0,3,5,5,9,8,9
+symbolic_reasoning,0,1,1,4,1,0,3,1,3,1,0,1
+transfer_learning,0,0,0,0,0,0,0,1,2,2,2,0
+unspecified_ai,368,409,406,424,366,375,327,412,450,385,590,361
