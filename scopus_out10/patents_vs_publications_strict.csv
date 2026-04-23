@@ -1,26 +1,29 @@
 company,strict_patent_families,publications_in_slr,patent_to_pub_ratio
-IBM,552,0,
-Samsung,295,28,10.5
-Siemens,164,14,11.7
-Intel,136,46,3.0
-Applied Materials,116,0,
-Huawei,79,0,
-Google,73,0,
-KLA,55,0,
-Synopsys,52,0,
-TSMC,50,0,
-ASML,43,0,
-NVIDIA,37,4,9.2
-Cadence,31,0,
-SK Hynix,27,6,4.5
-Micron,20,0,
-Qualcomm,14,4,3.5
-Meta,12,0,
-imec,9,0,
-Infineon,9,21,0.4
-Mentor Graphics,8,0,
-MediaTek,7,0,
-AMD,7,0,
-Apple,6,0,
-STMicroelectronics,2,41,0.0
-NXP,1,16,0.1
+Samsung,7,28,0.25
+IBM,7,0,inf
+Synopsys,6,0,inf
+Cadence,5,0,inf
+Siemens,4,14,0.29
+NVIDIA,4,4,1.00
+TSMC,3,0,inf
+KLA,3,0,inf
+Qualcomm,2,4,0.50
+Google,2,0,inf
+ASML,2,0,inf
+Huawei,1,0,inf
+MediaTek,1,0,inf
+Applied Materials,1,0,inf
+Intel,0,46,0.00
+STMicroelectronics,0,41,0.00
+Infineon,0,21,0.00
+NXP,0,16,0.00
+SK Hynix,0,6,0.00
+Mentor Graphics,0,0,—
+Apple,0,0,—
+AMD,0,0,—
+Meta,0,0,—
+Micron,0,0,—
+Broadcom,0,0,—
+Lam Research,0,0,—
+imec,0,0,—
+ARM,0,0,—
