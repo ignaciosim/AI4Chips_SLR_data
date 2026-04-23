@@ -4,73 +4,85 @@ Companion analysis to the publication-based SLR. All counts are patent *families
 
 ## Criterion
 
-To match the SLR's "AI method applied to a chip design task" rule, a patent qualifies as AI-for-Chips only if it carries **both** a chip-design/EDA CPC (G06F30, G06F17/50, G06F115, G06F119, G06F11/22, G01R31/28, or H01L) **and** a machine-learning CPC (anywhere under G06N).
+To match the SLR's "AI method applied to a chip design task" rule, a patent qualifies as AI-for-Chips only if *all three* conditions hold:
 
-## Strict AI-for-Chips patent families per company, 2015–2026
+1. Its Cooperative Patent Classification codes include a chip-design/EDA class (G06F30, G06F17/50, G06F115, G06F119, G06F11/22, or G01R31/28). H01L is deliberately excluded: it catches AI-accelerator chip patents (chips-for-AI), power electronics, and process-equipment filings whose AI content is unrelated to chip design.
+2. Its CPC codes include a machine-learning class (any subclass of G06N).
+3. Its title explicitly names an AI method — one of *artificial intelligence*, *machine learning*, *neural network*, *deep learning*, *reinforcement learning*, *graph neural*, *generative adversarial network*, *convolutional*, *recurrent*, *LSTM*, *transformer-based*, *LLM*, *variational autoencoder*, *Bayesian optimization*, *Gaussian process*, *active/self-supervised/semi-supervised learning*, or *diffusion model*.
 
-| Company | Patent families | Publications in SLR | Ratio |
+The title-keyword step is a precision filter: CPC-only filtering leaves residual false positives whose AI content appears in an unrelated claim or dependent patent. Requiring the method to be named in the title matches the rigour of the peer-reviewed journal corpus, where a paper earns an AI-for-Chips tag only when method and task co-occur in the title or abstract.
+
+## Strict AI-for-Chips patent families per company, 2015–2026 (total n = 48)
+
+Per-family list: `patents_strict_list.csv`. Per-company aggregation: `patents_vs_publications_strict.csv`.
+
+| Company | Patent families | Publications in SLR | Patent-to-publication ratio |
 |---|---:|---:|---:|
-| IBM | 552 | 0 | ∞ / — |
-| Samsung | 295 | 28 | 10.5× |
-| Siemens | 164 | 14 | 11.7× |
-| Intel | 136 | 46 | 3.0× |
-| Applied Materials | 116 | 0 | ∞ / — |
-| Huawei | 79 | 0 | ∞ / — |
-| Google | 73 | 0 | ∞ / — |
-| KLA | 55 | 0 | ∞ / — |
-| Synopsys | 52 | 0 | ∞ / — |
-| TSMC | 50 | 0 | ∞ / — |
-| ASML | 43 | 0 | ∞ / — |
-| NVIDIA | 37 | 4 | 9.2× |
-| Cadence | 31 | 0 | ∞ / — |
-| SK Hynix | 27 | 6 | 4.5× |
-| Micron | 20 | 0 | ∞ / — |
-| Qualcomm | 14 | 4 | 3.5× |
-| Meta | 12 | 0 | ∞ / — |
-| imec | 9 | 0 | ∞ / — |
-| Infineon | 9 | 21 | 0.4× |
-| Mentor Graphics | 8 | 0 | ∞ / — |
-| MediaTek | 7 | 0 | ∞ / — |
-| AMD | 7 | 0 | ∞ / — |
-| Apple | 6 | 0 | ∞ / — |
-| STMicroelectronics | 2 | 41 | 0.0× |
-| NXP | 1 | 16 | 0.1× |
+| Samsung | 7 | 28 | 0.25× |
+| IBM | 7 | 0 | inf |
+| Synopsys | 6 | 0 | inf |
+| Cadence | 5 | 0 | inf |
+| Siemens | 4 | 14 | 0.29× |
+| NVIDIA | 4 | 4 | 1.00× |
+| TSMC | 3 | 0 | inf |
+| KLA | 3 | 0 | inf |
+| Qualcomm | 2 | 4 | 0.50× |
+| Google | 2 | 0 | inf |
+| ASML | 2 | 0 | inf |
+| Huawei | 1 | 0 | inf |
+| MediaTek | 1 | 0 | inf |
+| Applied Materials | 1 | 0 | inf |
+| Intel | 0 | 46 | 0.00× |
+| STMicroelectronics | 0 | 41 | 0.00× |
+| Infineon | 0 | 21 | 0.00× |
+| NXP | 0 | 16 | 0.00× |
+| SK Hynix | 0 | 6 | 0.00× |
+| Mentor Graphics | 0 | 0 | — |
+| Apple | 0 | 0 | — |
+| AMD | 0 | 0 | — |
+| Meta | 0 | 0 | — |
+| Micron | 0 | 0 | — |
+| Broadcom | 0 | 0 | — |
+| Lam Research | 0 | 0 | — |
+| imec | 0 | 0 | — |
+| ARM | 0 | 0 | — |
 
-## Sensitivity: loose OR-based count for comparison
+## Sensitivity cuts
 
-The loose filter accepts patents with *either* a chip-design or an AI CPC (not both). Under this definition the counts are roughly 10–20× higher but include traditional algorithmic EDA patents with no ML and general-purpose neural-network patents with no chip content. We report loose counts only for methodological sensitivity.
+**Chip-keyword title filter (n = 155).** Replaces the method-name title regex with a chip-domain keyword set (semiconductor / layout / lithography / mask / metrology / yield / RTL / Verilog / etc., minus a negative list such as battery / medical / autonomous vehicle). Captures filings whose titles use non-method-named conventions (e.g., "Method and apparatus for ..."), at the cost of lower precision. Per-family list: `patents_strict_list_chipkw_sensitivity.csv`.
 
-| Company | Loose families | Strict families | Strict / loose |
-|---|---:|---:|---:|
-| IBM | 5,937 | 552 | 9% |
-| Samsung | 6,323 | 295 | 5% |
-| Siemens | 2,360 | 164 | 7% |
-| Intel | 1,895 | 136 | 7% |
-| Applied Materials | 235 | 116 | 49% |
-| Huawei | 3,295 | 79 | 2% |
-| Google | 1,997 | 73 | 4% |
-| KLA | 202 | 55 | 27% |
-| Synopsys | 852 | 52 | 6% |
-| TSMC | 1,363 | 50 | 4% |
-| ASML | 222 | 43 | 19% |
-| NVIDIA | 1,018 | 37 | 4% |
-| Cadence | 831 | 31 | 4% |
-| SK Hynix | 474 | 27 | 6% |
-| Micron | 477 | 20 | 4% |
-| Qualcomm | 1,416 | 14 | 1% |
-| Meta | 478 | 12 | 3% |
-| imec | 74 | 9 | 12% |
-| Infineon | 293 | 9 | 3% |
-| Mentor Graphics | 266 | 8 | 3% |
-| MediaTek | 210 | 7 | 3% |
-| AMD | 230 | 7 | 3% |
-| Apple | 482 | 6 | 1% |
-| STMicroelectronics | 48 | 2 | 4% |
-| NXP | 276 | 1 | 0% |
+**Loose OR-based CPC count.** Accepts patents with *either* a chip-design or an AI CPC (not both). Orders of magnitude higher than the strict count; kept only as a sanity-check reference for the corpus size. Per-company aggregation: `patents_vs_publications.csv`.
 
-## Interpretation
-
-Semiconductor-equipment makers (Applied Materials, KLA, ASML, imec) have disproportionately high AI-qualifying shares of their chip patent output (12–49%), indicating that ML is penetrating process equipment alongside its more visible role in EDA. Pure chipmakers and fabless design houses run at 3–10% strict/loose ratios. Infineon and STMicroelectronics are unusual in publishing more AI-for-Chips journal articles than they patent, consistent with their analog/power-IC focus and their presence in the device-physics and reliability journals indexed by the SLR corpus.
+| Company | Loose families | Strict families |
+|---|---:|---:|
+| Samsung | 6,323 | 7 |
+| IBM | 5,937 | 7 |
+| Synopsys | 852 | 6 |
+| Cadence | 831 | 5 |
+| Siemens | 2,360 | 4 |
+| NVIDIA | 1,018 | 4 |
+| TSMC | 1,363 | 3 |
+| KLA | 202 | 3 |
+| Qualcomm | 1,416 | 2 |
+| Google | 1,997 | 2 |
+| ASML | 222 | 2 |
+| Huawei | 3,295 | 1 |
+| MediaTek | 210 | 1 |
+| Applied Materials | 235 | 1 |
+| Intel | 1,895 | 0 |
+| STMicroelectronics | 48 | 0 |
+| Infineon | 293 | 0 |
+| NXP | 276 | 0 |
+| SK Hynix | 474 | 0 |
+| Mentor Graphics | 266 | 0 |
+| Apple | 482 | 0 |
+| AMD | 230 | 0 |
+| Meta | 478 | 0 |
+| Micron | 477 | 0 |
+| Broadcom | 14 | 0 |
+| Lam Research | 0 | 0 |
+| imec | 74 | 0 |
+| ARM | 5 | 0 |
 
 ## Regenerate
 
