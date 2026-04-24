@@ -1,29 +1,29 @@
 company,strict_patent_families,publications_in_slr,patent_to_pub_ratio
-Samsung,7,28,0.25
+Samsung,7,3,2.33
 IBM,7,0,inf
 Synopsys,6,0,inf
 Cadence,5,0,inf
-Siemens,4,14,0.29
-NVIDIA,4,4,1.00
+Siemens,4,2,2.00
+NVIDIA,4,1,4.00
 TSMC,3,0,inf
 KLA,3,0,inf
-Qualcomm,2,4,0.50
+Qualcomm,2,1,2.00
 Google,2,0,inf
 ASML,2,0,inf
 Huawei,1,0,inf
 MediaTek,1,0,inf
 Applied Materials,1,0,inf
-Intel,0,46,0.00
-STMicroelectronics,0,41,0.00
-Infineon,0,21,0.00
-NXP,0,16,0.00
-SK Hynix,0,6,0.00
+Intel,0,3,0.00
+NXP,0,2,0.00
+SK Hynix,0,1,0.00
+STMicroelectronics,0,1,0.00
 Mentor Graphics,0,0,—
 Apple,0,0,—
-AMD,0,0,—
 Meta,0,0,—
+AMD,0,0,—
+ARM,0,0,—
 Micron,0,0,—
+Infineon,0,0,—
 Broadcom,0,0,—
 Lam Research,0,0,—
 imec,0,0,—
-ARM,0,0,—
