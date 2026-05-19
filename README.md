@@ -24,16 +24,13 @@ Full Scopus retrieval + downstream processing for the current pipeline run. ~67 
 | `openalex_cache/openalex_ai4chips.json` | OpenAlex metadata (citation counts, full author lists, reference lists) for the AI-for-Chips subset. |
 | `abstracts_cache.json` | Abstracts per DOI fetched from OpenAlex → Elsevier → publisher-meta fallback chain. |
 | `papers_manual.html` | VPN-ready HTML list of paywalled shortlist papers with inline abstracts. |
-| `papers_download_log.csv` | Per-paper status of OA/paywall/error outcomes. |
-| `stage_shortlists.md` + `stage_shortlists_enriched.md` | Curated per-stage shortlist of 52 exemplar papers with gists and acronym glossary. |
-| `acronyms.md` | Glossary of acronyms used in the shortlist tables. |
-| `existing_refs.json` | Structured metadata for the manuscript's pre-existing references [1]–[14]. |
-| `references.bib` | Full IEEE BibTeX file (76 entries: 14 pre-existing + 52 shortlist + can be extended). |
-| `references_ieee.docx` + `.md` | Paste-ready IEEE reference list with hyperlinked DOIs. |
-| `references_lookup.md` | Author-Year → BibTeX key → `[N]` number mapping. |
-| `geo_forecast.csv` + `.md` | Per-country leadership metrics: CAGR, share trajectory, P1/P2 phase comparison. |
-| `geo_leadership.md` + `geo_paper_section.md` | Narrative drafts for the geographic-landscape section of the paper. |
-| `conclusion_digital_thread.md` | Narrative draft for the paper's closing "broken digital thread" argument. |
+| `papers_download_log.csv` | Per-paper OA/paywall/error status and Unpaywall licence string at retrieval time. |
+| `existing_refs.json` | Structured metadata for the manuscript's pre-existing references. |
+| `references.bib` | IEEE BibTeX file for the manuscript references. |
+| `references_ieee.docx` | Paste-ready IEEE reference list with hyperlinked DOIs. |
+| `geo_forecast.csv` | Per-country leadership metrics: CAGR, share trajectory, P1/P2 phase comparison. |
+
+Pre-publication narrative drafts (paper-section markdown, stage shortlists with curator gists, acronym glossary, references lookup) are intentionally not part of this public dataset; their contents are intended to live in the manuscript itself.
 
 Rendered figures (PDF + PNG) are *not* committed to this repository — they regenerate deterministically from the code in [AI4Chips_SLR](https://github.com/ignaciosim/AI4Chips_SLR) via `python3 figures/generate_all_figures.py`.
 
