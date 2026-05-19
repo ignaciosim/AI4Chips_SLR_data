@@ -7,4 +7,5 @@ Thumbs.db
 *~
 
 # Rendered figures — regenerate from the AI4Chips_SLR code repo
+corpus/figures/
 scopus_out*/figures/

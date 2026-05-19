@@ -8,9 +8,9 @@ Data artefacts for the systematic literature review on AI methods applied across
 
 ## Contents
 
-### `scopus_out10/` — primary snapshot (2015–2026)
+### `corpus/` — primary snapshot (2015–2026)
 
-Full Scopus retrieval + downstream processing for the 10th (current) pipeline run. ~67 MB.
+Full Scopus retrieval + downstream processing for the current pipeline run. ~67 MB.
 
 | File / subdirectory | Description |
 |---|---|
@@ -66,9 +66,9 @@ Point the code at the data:
 
 ```bash
 cd AI4Chips_SLR/elsevier/files
-ln -s ../../../AI4Chips_SLR_data/scopus_out10 scopus_out10
-ln -s ../../../AI4Chips_SLR_data/external_references_cache scopus_out7/openalex_cache
-# then all pipeline scripts work unchanged
+ln -s ../../../AI4Chips_SLR_data/corpus corpus
+ln -s ../../../AI4Chips_SLR_data/external_references_cache corpus/openalex_cache
+# then point pipeline scripts at ./corpus via --outdir / --datadir flags
 ```
 
 Or just copy the two data directories into `elsevier/files/`.
@@ -91,7 +91,7 @@ See the code repo's top-level README / CLAUDE.md (if present) for the full comma
 
 ## Versioning
 
-This dataset snapshot corresponds to code commit `e76d2a1` of [AI4Chips_SLR](https://github.com/ignaciosim/AI4Chips_SLR), pipeline run number 10. Earlier pipeline runs (`scopus_out1` through `scopus_out9`) are historical artefacts not preserved here; only the 10th run represents the corpus referenced in the paper.
+This dataset snapshot corresponds to code commit `e76d2a1` of [AI4Chips_SLR](https://github.com/ignaciosim/AI4Chips_SLR). The directory was previously named `scopus_out10/` to reflect its position as the tenth iteration of the pipeline during development; it has been renamed to `corpus/` for the public release. Earlier pipeline runs are historical artefacts not preserved here.
 
 ---
 
