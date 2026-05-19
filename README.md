@@ -27,8 +27,6 @@ Full Scopus retrieval + downstream processing for the current pipeline run. ~67 
 | `papers_manual.html` | VPN-ready HTML list of paywalled shortlist papers with inline abstracts. |
 | `papers_download_log.csv` | Per-paper status of OA/paywall/error outcomes. |
 | `stage_shortlists.md` + `stage_shortlists_enriched.md` | Curated per-stage shortlist of 52 exemplar papers with gists and acronym glossary. |
-| `gists.json` | Hand-curated one-line contribution summaries per shortlisted paper. |
-| `stage_summaries.json` | Per-stage narrative paragraphs used in the paper. |
 | `acronyms.md` | Glossary of acronyms used in the shortlist tables. |
 | `existing_refs.json` | Structured metadata for the manuscript's pre-existing references [1]–[14]. |
 | `references.bib` | Full IEEE BibTeX file (76 entries: 14 pre-existing + 52 shortlist + can be extended). |
