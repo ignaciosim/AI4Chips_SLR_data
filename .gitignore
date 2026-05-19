@@ -9,3 +9,7 @@ Thumbs.db
 # Rendered figures — regenerate from the AI4Chips_SLR code repo
 corpus/figures/
 scopus_out*/figures/
+
+# Third-party publisher PDFs — not for redistribution
+corpus/papers_oa/
+scopus_out*/papers_oa/

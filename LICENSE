@@ -70,12 +70,6 @@ the terms of its original rights-holder:
     These are made available by OpenAlex under CC0:
         https://docs.openalex.org/additional-help/faq#how-is-openalex-licensed
 
-  * Open-access PDFs in `papers_oa/`
-    Each PDF is copyrighted by its original publisher and was retrieved
-    via Unpaywall. Individual licences vary; see `papers_download_log.csv`
-    for the per-paper licence string returned by Unpaywall at retrieval
-    time.
-
 By reusing this dataset, you accept responsibility for complying with the
 licence terms of the underlying third-party content where applicable.
 
