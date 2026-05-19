@@ -5,3 +5,6 @@ Thumbs.db
 # Editor
 *.swp
 *~
+
+# Rendered figures — regenerate from the AI4Chips_SLR code repo
+scopus_out*/figures/

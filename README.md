@@ -37,7 +37,8 @@ Full Scopus retrieval + downstream processing for the 10th (current) pipeline ru
 | `geo_forecast.csv` + `.md` | Per-country leadership metrics: CAGR, share trajectory, P1/P2 phase comparison. |
 | `geo_leadership.md` + `geo_paper_section.md` | Narrative drafts for the geographic-landscape section of the paper. |
 | `conclusion_digital_thread.md` | Narrative draft for the paper's closing "broken digital thread" argument. |
-| `figures/` | Publication-quality PDF + PNG figures (40 figures: pub volume, growth model, methods, tasks, geo, citations, linguistic terms, forecasts). |
+
+Rendered figures (PDF + PNG) are *not* committed to this repository — they regenerate deterministically from the code in [AI4Chips_SLR](https://github.com/ignaciosim/AI4Chips_SLR) via `python3 figures/generate_all_figures.py`.
 
 ### `external_references_cache/` — OpenAlex external-references corpus
 
