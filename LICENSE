@@ -1,0 +1,89 @@
+Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Ignacio Chechile
+
+This dataset is released under the Creative Commons Attribution 4.0
+International Public License ("CC BY 4.0").
+
+The full legal text of the licence is available at:
+    https://creativecommons.org/licenses/by/4.0/legalcode
+and a human-readable summary at:
+    https://creativecommons.org/licenses/by/4.0/
+
+================================================================================
+SUMMARY
+================================================================================
+
+You are free to:
+
+  * Share — copy and redistribute the material in any medium or format
+  * Adapt — remix, transform, and build upon the material
+            for any purpose, even commercially.
+
+Under the following terms:
+
+  * Attribution — You must give appropriate credit, provide a link to the
+    licence, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use.
+
+  * No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing anything
+    the licence permits.
+
+================================================================================
+SCOPE NOTE — THIRD-PARTY CONTENT
+================================================================================
+
+The CC BY 4.0 licence above applies to the *curated and derived* content in
+this repository — including but not limited to:
+
+  * Ontology-based classifications and method tags
+    (`classified_scopus.csv`, `final_ai4chips_high_only.csv` + `.json`,
+     `pivot_*.csv`)
+  * Hand-curated gists, stage summaries, acronym glossary, shortlist tables
+    (`gists.json`, `stage_summaries.json`, `acronyms.md`,
+     `stage_shortlists*.md`)
+  * Geographic forecasts and narrative drafts
+    (`geo_forecast.*`, `geo_leadership.md`, `geo_paper_section.md`,
+     `conclusion_digital_thread.md`)
+  * Manuscript reference artefacts
+    (`references.bib`, `references_ieee.*`, `references_lookup.md`,
+     `existing_refs.json`)
+  * All figures in `figures/`
+
+The following content is NOT licensed by this file and remains subject to
+the terms of its original rights-holder:
+
+  * Raw Scopus bibliographic records
+    (`raw_scopus_*.jsonl`, `raw_scopus_*.csv`, `abstracts_cache.json`
+     entries sourced from Scopus, and any fields propagated downstream
+     from those records).
+    These are governed by Elsevier's Scopus API terms of use:
+        https://dev.elsevier.com/policy.html
+    Redistribution may be restricted; users intending to redistribute
+    or build on these fields should consult Elsevier's policy directly.
+
+  * OpenAlex-sourced metadata
+    (`openalex_cache/`, `external_references_cache/`, `abstracts_cache.json`
+     entries sourced from OpenAlex).
+    These are made available by OpenAlex under CC0:
+        https://docs.openalex.org/additional-help/faq#how-is-openalex-licensed
+
+  * Open-access PDFs in `papers_oa/`
+    Each PDF is copyrighted by its original publisher and was retrieved
+    via Unpaywall. Individual licences vary; see `papers_download_log.csv`
+    for the per-paper licence string returned by Unpaywall at retrieval
+    time.
+
+By reusing this dataset, you accept responsibility for complying with the
+licence terms of the underlying third-party content where applicable.
+
+================================================================================
+CITATION
+================================================================================
+
+If you use this dataset in academic work, please cite the accompanying
+systematic literature review paper (citation forthcoming) and link back to:
+
+    https://github.com/ignaciosim/AI4Chips_SLR_data
