@@ -27,7 +27,6 @@ Full Scopus retrieval + downstream processing for the current pipeline run. ~67 
 | `papers_download_log.csv` | Per-paper OA/paywall/error status and Unpaywall licence string at retrieval time. |
 | `existing_refs.json` | Structured metadata for the manuscript's pre-existing references. |
 | `references.bib` | IEEE BibTeX file for the manuscript references. |
-| `references_ieee.docx` | Paste-ready IEEE reference list with hyperlinked DOIs. |
 | `geo_forecast.csv` | Per-country leadership metrics: CAGR, share trajectory, P1/P2 phase comparison. |
 
 Pre-publication narrative drafts (paper-section markdown, stage shortlists with curator gists, acronym glossary, references lookup) are intentionally not part of this public dataset; their contents are intended to live in the manuscript itself.
