@@ -90,4 +90,4 @@ This dataset snapshot corresponds to code commit `e76d2a1` of [AI4Chips_SLR](htt
 
 ## License
 
-Curated annotations and derived artefacts in this repository are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — see [`LICENSE`](LICENSE) for the full notice and the per-asset scope. Underlying Scopus records remain subject to Elsevier's Scopus API terms of use; OpenAlex-sourced metadata is provided under CC0.
+This repository is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — see [`LICENSE`](LICENSE) for the full legal text. Curated annotations and derived artefacts are covered by this licence; underlying Scopus records remain subject to Elsevier's Scopus API terms of use, and OpenAlex-sourced metadata is provided under CC0. See [`NOTICE`](NOTICE) for the per-asset scope and third-party content carve-outs.

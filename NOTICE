@@ -1,0 +1,55 @@
+AI for Chips — SLR dataset
+Copyright (c) 2026 Ignacio Chechile
+
+This repository is licensed under the Creative Commons Attribution 4.0
+International Public License (CC BY 4.0). See LICENSE for the full legal
+text, or https://creativecommons.org/licenses/by/4.0/ for a summary.
+
+================================================================================
+SCOPE — what CC BY 4.0 covers in this repository
+================================================================================
+
+The CC BY 4.0 licence applies to the *curated and derived* content in this
+repository, including but not limited to:
+
+  * Ontology-based classifications and method tags
+    (`classified_scopus.csv`, `final_ai4chips_high_only.csv` + `.json`,
+     `pivot_*.csv`)
+  * Geographic forecasts
+    (`geo_forecast.*`)
+  * Manuscript reference artefacts
+    (`references.bib`, `existing_refs.json`)
+
+================================================================================
+THIRD-PARTY CONTENT — not covered by the CC BY 4.0 licence above
+================================================================================
+
+The following content remains subject to the terms of its original
+rights-holder:
+
+  * Raw Scopus bibliographic records
+    (`raw_scopus_*.jsonl`, `raw_scopus_*.csv`, `abstracts_cache.json`
+     entries sourced from Scopus, and any fields propagated downstream
+     from those records).
+    Governed by Elsevier's Scopus API terms of use:
+        https://dev.elsevier.com/policy.html
+    Redistribution may be restricted; users intending to redistribute or
+    build on these fields should consult Elsevier's policy directly.
+
+  * OpenAlex-sourced metadata
+    (`openalex_cache/`, `external_references_cache/`, `abstracts_cache.json`
+     entries sourced from OpenAlex).
+    Provided by OpenAlex under CC0:
+        https://docs.openalex.org/additional-help/faq#how-is-openalex-licensed
+
+By reusing this dataset, you accept responsibility for complying with the
+licence terms of the underlying third-party content where applicable.
+
+================================================================================
+CITATION
+================================================================================
+
+If you use this dataset in academic work, please cite the accompanying
+systematic literature review paper (citation forthcoming) and link back to:
+
+    https://github.com/ignaciosim/AI4Chips_SLR_data
