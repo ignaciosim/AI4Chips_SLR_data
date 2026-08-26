@@ -10,24 +10,35 @@ Data artefacts for the systematic literature review on AI methods applied across
 
 ### `corpus/` — primary snapshot (2015–2026)
 
-Full Scopus retrieval + downstream processing for the current pipeline run. ~67 MB.
+Full Scopus retrieval + downstream processing for the current pipeline run. ~111 MB.
+
+Retrieval covers six lifecycle phases across three passes — one journal (`SRCTYPE(j) AND DOCTYPE(ar)`) and two conference (`SRCTYPE(p) AND DOCTYPE(cp)`, differing in venue list) — for 18 queries in total. The chain is 19,055 records retrieved → 4,504 removed as duplicates (4,425 exact plus 79 conference papers superseded by an extended journal version) → **14,551 screened** → 707 high-confidence AI-for-Chips → 673 after GaN false-positive removal → **660 analysed** after curation (264 journal articles, 396 conference papers).
 
 | File / subdirectory | Description |
 |---|---|
-| `raw_scopus_all.jsonl` + `.csv` | Merged, deduplicated Scopus records across six lifecycle phases (N = 5,531). |
-| `raw_scopus_<phase>.jsonl` + `.csv` | Per-phase retrievals (design, fabrication, packaging, transit, in_field, disposal). |
-| `scopus_counts_by_stage_year.csv` | Per-stage × per-year retrieval counts. |
-| `classified_scopus.csv` | Ontology-based classification of every paper (directionality, method tags, chip tasks, hardware artefacts, AI workloads). |
+| `scopus_queries.csv` | The 18 Scopus queries as actually issued, one per lifecycle phase × retrieval pass, with `PUBYEAR` templated. |
+| `raw_scopus_all.jsonl` + `.csv` | Merged, de-duplicated records across all phases and passes (N = 14,551). |
+| `raw_scopus_<phase>.jsonl` | Journal pass, per lifecycle phase (design, fabrication, packaging, transit, in_field, disposal). |
+| `raw_scopus_cd_<phase>.jsonl` | First conference pass, per phase. |
+| `raw_scopus_cn_<phase>.jsonl` | Second conference pass (broader venue list), per phase. |
+| `raw_scopus_venue_counts.csv` | Records retrieved per source title. |
+| `classified_scopus.csv` | Ontology-based classification of every screened record (directionality, confidence, method tags, chip tasks, hardware artefacts, AI workloads). |
+| `classification_summary.txt` | Text summary of the classification distribution. |
 | `pivot_ai_methods_*.csv` | AI method × year / × stage pivot tables. |
-| `final_ai4chips_high_only.csv` + `.json` | High-confidence AI-for-Chips subset after GaN false-positive filtering (N = 321). |
-| `classification_summary.txt` | Text summary of classification distribution. |
+| `ai_methods_long.csv` | Long-format paper × method-tag table. |
+| `final_ai4chips_high_only.csv` + `.json` | High-confidence AI-for-Chips subset after GaN false-positive filtering (N = 673). The 660-paper analysed corpus is this file minus 5 surveys and 8 manual exclusions, both applied by `analysis/generate_stage_shortlist.py` in the code repo. |
+| `screening_conference.csv` | Manual screening audit of the conference corpus. |
+| `conference_exemplar_candidates.csv` | Candidate conference exemplars considered for the per-stage tables. |
+| `patents_strict_list.csv` | AI-for-Chips patent families under the CPC-conjunction plus title-keyword criterion (233 families; Google Patents Public Data snapshot of 26 August 2026). |
+| `patents_strict_list_chipkw_sensitivity.csv` | The same list under the alternative chip-keyword title filter. |
+| `patents_vs_publications_strict.csv` | Per-company patent families against papers in the analysed corpus. |
+| `patents_vs_publications.csv` | The looser OR-based magnitude reference. |
+| `case_study_patents.csv` | Patent probes for three case-study papers. |
+| `geo_forecast.csv` + `.md` | Per-country leadership metrics: CAGR, share trajectory, P1/P2 phase comparison. |
 | `openalex_cache/openalex_ai4chips.json` | OpenAlex metadata (citation counts, full author lists, reference lists) for the AI-for-Chips subset. |
-| `abstracts_cache.json` | Abstracts per DOI fetched from OpenAlex → Elsevier → publisher-meta fallback chain. |
-| `papers_manual.html` | VPN-ready HTML list of paywalled shortlist papers with inline abstracts. |
-| `papers_download_log.csv` | Per-paper OA/paywall/error status and Unpaywall licence string at retrieval time. |
+| `abstracts_cache.json`, `abstracts_openalex.json` | Abstracts per DOI, retrieved via OpenAlex with a Semantic Scholar fallback (92.3% coverage). |
 | `existing_refs.json` | Structured metadata for the manuscript's pre-existing references. |
 | `references.bib` | IEEE BibTeX file for the manuscript references. |
-| `geo_forecast.csv` | Per-country leadership metrics: CAGR, share trajectory, P1/P2 phase comparison. |
 
 Pre-publication narrative drafts (paper-section markdown, stage shortlists with curator gists, acronym glossary, references lookup) are intentionally not part of this public dataset; their contents are intended to live in the manuscript itself.
 
@@ -70,13 +81,13 @@ Or just copy the two data directories into `elsevier/files/`.
 
 ## Pipeline stages (for orientation)
 
-1. **Fetch** — `fetch_scopus.py` retrieves journal articles from Scopus per lifecycle phase (2015–2026, journal-only, curated venue list).
-2. **Merge** — `merge_scopus.py` deduplicates per-phase pulls into `raw_scopus_all.jsonl`.
+1. **Fetch** — `fetch_scopus.py` retrieves records from Scopus per lifecycle phase (2015–2026, curated venue list). Journal articles by default; `--conferences` swaps the source-type filter to conference proceedings.
+2. **Merge** — `merge_scopus.py` de-duplicates per-phase pulls into `raw_scopus_all.jsonl`, by record identifier and then by an extended-version pass that collapses a conference paper into its journal extension.
 3. **Classify** — `classify_scopus.py` applies ontology-based directionality classification and method tagging.
 4. **Filter** — `create_final_high_confidence_only.py` narrows to high-confidence AI-for-Chips papers and removes GaN material false positives.
-5. **Shortlist** — `analysis/generate_stage_shortlist.py` curates 52 exemplar papers across five stages using a blended criterion (anchors, exemplars, recent, newest).
+5. **Shortlist** — `analysis/generate_stage_shortlist.py` applies curation (surveys, manual exclusions) and pins the 49 exemplar papers displayed in the manuscript across five stages; `--show-candidates` emits the full algorithmic ranking instead.
 6. **Augment** — `analysis/download_shortlist.py` fetches OA PDFs and abstracts for the shortlist. `analysis/build_ieee_refs*.py` produces IEEE references + BibTeX. `analysis/geo_forecast.py` produces country-level analysis.
-7. **Figures** — `figures/generate_all_figures.py` and standalones render all 40 publication figures.
+7. **Figures** — `figures/generate_all_figures.py` and standalones render the publication figures (PNG by default; set `SLR_FIG_PDF=1` for PDF).
 
 See the code repo's top-level README / CLAUDE.md (if present) for the full command list.
 
@@ -84,7 +95,13 @@ See the code repo's top-level README / CLAUDE.md (if present) for the full comma
 
 ## Versioning
 
-This dataset snapshot corresponds to code commit `e76d2a1` of [AI4Chips_SLR](https://github.com/ignaciosim/AI4Chips_SLR). The directory was previously named `scopus_out10/` to reflect its position as the tenth iteration of the pipeline during development; it has been renamed to `corpus/` for the public release. Earlier pipeline runs are historical artefacts not preserved here.
+This dataset snapshot corresponds to code commit `f83c5ab` of [AI4Chips_SLR](https://github.com/ignaciosim/AI4Chips_SLR), and to the revised manuscript. It was produced by the pipeline run held locally as `scopus_out12/` and renamed to `corpus/` for release.
+
+The previous snapshot — the journal-only corpus accompanying the **submitted** manuscript, N = 5,531 screened and 321 high-confidence — is preserved at tag [`snapshot-submitted`](https://github.com/ignaciosim/AI4Chips_SLR_data/releases/tag/snapshot-submitted) so that the figures in the submitted version remain auditable. The two differ in more than corpus size: the revision added conference proceedings, corrected the ontology matcher from substring to word-boundary matching, and collapsed extended-version duplicates. Numbers are not comparable between the two snapshots without reading the code repository's commit history.
+
+Patent counts are reproducible only against a dated snapshot of Google Patents Public Data: the identical query returned 48 families in April 2026 and 233 in August 2026, the April result being a strict subset of the August one. The figures here are the snapshot of **26 August 2026**.
+
+Earlier pipeline runs are historical artefacts not preserved here.
 
 ---
 

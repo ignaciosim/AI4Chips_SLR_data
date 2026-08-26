@@ -2,63 +2,65 @@
 ONTOLOGY-BASED CLASSIFICATION SUMMARY
 ======================================================================
 
-Total papers: 5531
+Total papers: 14551
 
 Classification distribution:
-  unclassified        : 2590 ( 46.8%)
-  ai_for_chips        : 2548 ( 46.1%)
-  ambiguous           :  275 (  5.0%)
-  chips_for_ai        :  110 (  2.0%)
-  both                :    8 (  0.1%)
+  unclassified        : 7824 ( 53.8%)
+  ai_for_chips        : 5573 ( 38.3%)
+  ambiguous           :  821 (  5.6%)
+  chips_for_ai        :  313 (  2.2%)
+  both                :   20 (  0.1%)
 
 Confidence distribution:
-  low                 : 5078 ( 91.8%)
-  high                :  345 (  6.2%)
-  medium              :  108 (  2.0%)
+  low                 : 13522 ( 92.9%)
+  high                :  720 (  4.9%)
+  medium              :  309 (  2.1%)
 
 Breakdown by lifecycle phase:
 
-  design (n=2296):
-    ai_for_chips        : 1158 ( 50.4%)
-    unclassified        :  961 ( 41.9%)
-    ambiguous           :  102 (  4.4%)
-    chips_for_ai        :   69 (  3.0%)
-    both                :    6 (  0.3%)
+  design (n=4716):
+    unclassified        : 2121 ( 45.0%)
+    ai_for_chips        : 2103 ( 44.6%)
+    ambiguous           :  296 (  6.3%)
+    chips_for_ai        :  183 (  3.9%)
+    both                :   13 (  0.3%)
 
-  fabrication (n=1007):
-    unclassified        :  524 ( 52.0%)
-    ai_for_chips        :  416 ( 41.3%)
-    ambiguous           :   52 (  5.2%)
-    chips_for_ai        :   15 (  1.5%)
+  fabrication (n=3730):
+    unclassified        : 2315 ( 62.1%)
+    ai_for_chips        : 1187 ( 31.8%)
+    ambiguous           :  186 (  5.0%)
+    chips_for_ai        :   41 (  1.1%)
+    both                :    1 (  0.0%)
 
-  packaging (n=424):
-    unclassified        :  241 ( 56.8%)
-    ai_for_chips        :  129 ( 30.4%)
-    ambiguous           :   32 (  7.5%)
-    chips_for_ai        :   21 (  5.0%)
-    both                :    1 (  0.2%)
+  packaging (n=1655):
+    unclassified        : 1165 ( 70.4%)
+    ai_for_chips        :  302 ( 18.2%)
+    ambiguous           :  126 (  7.6%)
+    chips_for_ai        :   62 (  3.7%)
 
-  transit (n=144):
-    ai_for_chips        :   76 ( 52.8%)
-    unclassified        :   63 ( 43.8%)
-    ambiguous           :    5 (  3.5%)
+  transit (n=345):
+    ai_for_chips        :  167 ( 48.4%)
+    unclassified        :  155 ( 44.9%)
+    ambiguous           :   21 (  6.1%)
+    both                :    1 (  0.3%)
+    chips_for_ai        :    1 (  0.3%)
 
-  in_field (n=1649):
-    unclassified        :  796 ( 48.3%)
-    ai_for_chips        :  764 ( 46.3%)
-    ambiguous           :   83 (  5.0%)
-    chips_for_ai        :    5 (  0.3%)
-    both                :    1 (  0.1%)
+  in_field (n=4072):
+    unclassified        : 2050 ( 50.3%)
+    ai_for_chips        : 1800 ( 44.2%)
+    ambiguous           :  191 (  4.7%)
+    chips_for_ai        :   26 (  0.6%)
+    both                :    5 (  0.1%)
 
-  disposal (n=11):
-    unclassified        :    5 ( 45.5%)
-    ai_for_chips        :    5 ( 45.5%)
-    ambiguous           :    1 (  9.1%)
+  disposal (n=33):
+    unclassified        :   18 ( 54.5%)
+    ai_for_chips        :   14 ( 42.4%)
+    ambiguous           :    1 (  3.0%)
 
 ======================================================================
 PRECISION ESTIMATE
 ======================================================================
-  Keyword baseline precision:      ~98.0%
-  Papers flagged as chips-for-AI:    110
-  Papers after noise removal:        5421
-  Noise removal rate:                2.0%
+  Keyword baseline precision:      ~97.8%
+  Papers flagged as chips-for-AI:    313
+  Papers after noise removal:        14238
+  Noise removal rate:                2.2%
