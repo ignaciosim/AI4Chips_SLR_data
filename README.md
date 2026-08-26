@@ -26,7 +26,8 @@ Retrieval covers six lifecycle phases across three passes — one journal (`SRCT
 | `classification_summary.txt` | Text summary of the classification distribution. |
 | `pivot_ai_methods_*.csv` | AI method × year / × stage pivot tables. |
 | `ai_methods_long.csv` | Long-format paper × method-tag table. |
-| `final_ai4chips_high_only.csv` + `.json` | High-confidence AI-for-Chips subset after GaN false-positive filtering (N = 673). The 660-paper analysed corpus is this file minus 5 surveys and 8 manual exclusions, both applied by `analysis/generate_stage_shortlist.py` in the code repo. |
+| `final_ai4chips_high_only.csv` + `.json` | **The analysed corpus (N = 660)** — the set every figure and statistic in the paper is computed over. |
+| `high_confidence_pre_curation.csv` + `.json` | The same corpus one step earlier (N = 673): high-confidence AI-for-Chips after GaN false-positive removal but before curation. Retained because it is a step in the PRISMA chain; the 13 papers separating the two are 5 surveys and 8 manual false positives, listed by `create_final_high_confidence_only.py` when it runs. |
 | `screening_conference.csv` | Manual screening audit of the conference corpus. |
 | `conference_exemplar_candidates.csv` | Candidate conference exemplars considered for the per-stage tables. |
 | `patents_strict_list.csv` | AI-for-Chips patent families under the CPC-conjunction plus title-keyword criterion (233 families; Google Patents Public Data snapshot of 26 August 2026). |
@@ -69,13 +70,27 @@ git clone https://github.com/ignaciosim/AI4Chips_SLR_data.git
 Point the code at the data:
 
 ```bash
-cd AI4Chips_SLR/elsevier/files
-ln -s ../../../AI4Chips_SLR_data/corpus corpus
-ln -s ../../../AI4Chips_SLR_data/external_references_cache corpus/openalex_cache
-# then point pipeline scripts at ./corpus via --outdir / --datadir flags
+cd AI4Chips_SLR
+ln -s ../AI4Chips_SLR_data/corpus corpus
 ```
 
-Or just copy the two data directories into `elsevier/files/`.
+Then run, with no further arguments — `DATADIR` defaults to `corpus`:
+
+```bash
+make figures      # 21 figure scripts -> corpus/figures/*.png
+make analysis     # text analyses to stdout
+```
+
+No Scopus credentials are needed: the retrieval stage does not fire when the
+corpus is already present. `make patents` is the exception, requiring Google
+Cloud credentials; its outputs are already included here.
+
+`external_references_cache/` is consumed directly by
+`figures/fig_linguistic_terms.py`, which takes its path as an argument; it does
+not need to be linked into `corpus/`.
+
+Or copy the two data directories into the code repository root instead of
+symlinking.
 
 ---
 

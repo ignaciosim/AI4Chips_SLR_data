@@ -340,6 +340,40 @@
     }
   },
   {
+    "doc_id": "2-s2.0-85027936215",
+    "stage": "in_field",
+    "year": 2015,
+    "title": "VLSI Design for SVM-Based Speaker Verification System",
+    "creator": "Wang J.",
+    "publication": "IEEE Transactions on Very Large Scale Integration VLSI Systems",
+    "doi": "10.1109/TVLSI.2014.2335112",
+    "volume": "23",
+    "issue": "7",
+    "pages": "1355-1359",
+    "cover_date": "2015-07-01",
+    "cited_by_count": "32",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "National Central University",
+        "affiliation-city": "Taoyuan",
+        "affiliation-country": "Taiwan"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85027936215&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/85027936215",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "classical_ml",
+      "ai_methods": "classical_ml:svm",
+      "chip_tasks": "verification:verification",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
     "doc_id": "2-s2.0-84933566368",
     "stage": "fabrication",
     "year": 2016,
@@ -816,6 +850,40 @@
     }
   },
   {
+    "doc_id": "2-s2.0-84992596252",
+    "stage": "in_field",
+    "year": 2016,
+    "title": "Development of a lifetime prediction model for lithium thionyl chloride batteries based on an accelerated degradation test",
+    "creator": "Cheng S.",
+    "publication": "Microelectronics Reliability",
+    "doi": "10.1016/j.microrel.2016.07.152",
+    "volume": "65",
+    "issue": null,
+    "pages": "274-279",
+    "cover_date": "2016-10-01",
+    "cited_by_count": "33",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "South China Normal University",
+        "affiliation-city": "Guangzhou",
+        "affiliation-country": "China"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84992596252&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/84992596252",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "general_ml_signals",
+      "ai_methods": "general_ml_signals:prediction model",
+      "chip_tasks": "reliability_analysis:degradation",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
     "doc_id": "2-s2.0-84996878214",
     "stage": "design",
     "year": 2016,
@@ -1243,6 +1311,40 @@
       "method_tags": "bayesian_probabilistic",
       "ai_methods": "bayesian_probabilistic:bayesian",
       "chip_tasks": "yield_prediction:yield optimization",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
+    "doc_id": "2-s2.0-85029165793",
+    "stage": "in_field",
+    "year": 2017,
+    "title": "Reliability Characteristics and Mechanisms of HRL's T3 GaN Technology",
+    "creator": "Burnham S.D.",
+    "publication": "IEEE Transactions on Semiconductor Manufacturing",
+    "doi": "10.1109/TSM.2017.2748921",
+    "volume": "30",
+    "issue": "4",
+    "pages": "480-485",
+    "cover_date": "2017-11-01",
+    "cited_by_count": "25",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "HRL Laboratories",
+        "affiliation-city": "Malibu",
+        "affiliation-country": "United States"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85029165793&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/85029165793",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "generative_adversarial",
+      "ai_methods": "generative_adversarial:gan",
+      "chip_tasks": "reliability_analysis:reliability",
       "hw_artifacts": null,
       "ai_workloads": null
     }
@@ -3838,6 +3940,40 @@
       "method_tags": "classical_ml",
       "ai_methods": "classical_ml:machine learning",
       "chip_tasks": "design_space_exploration:co-optimization",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
+    "doc_id": "2-s2.0-85082589776",
+    "stage": "in_field",
+    "year": 2019,
+    "title": "An overview of failure analysis expert system based on Bayesian networks",
+    "creator": "Wang H.",
+    "publication": "Proceedings of the International Symposium on the Physical and Failure Analysis of Integrated Circuits IPFA",
+    "doi": "10.1109/IPFA47161.2019.8984840",
+    "volume": null,
+    "issue": null,
+    "pages": null,
+    "cover_date": "2019-07-01",
+    "cited_by_count": "2",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "CEPREI",
+        "affiliation-city": "Guangzhou",
+        "affiliation-country": "China"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85082589776&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/85082589776",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "bayesian_probabilistic",
+      "ai_methods": "bayesian_probabilistic:bayesian",
+      "chip_tasks": "fault_diagnosis:failure analysis",
       "hw_artifacts": null,
       "ai_workloads": null
     }
@@ -6763,6 +6899,40 @@
     }
   },
   {
+    "doc_id": "2-s2.0-85111947681",
+    "stage": "design",
+    "year": 2021,
+    "title": "Machine Learning for Electronic Design Automation: A Survey",
+    "creator": "Huang G.",
+    "publication": "ACM Transactions on Design Automation of Electronic Systems",
+    "doi": "10.1145/3451179",
+    "volume": "26",
+    "issue": "5",
+    "pages": null,
+    "cover_date": "2021-09-01",
+    "cited_by_count": "273",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "Tsinghua University",
+        "affiliation-city": "Beijing",
+        "affiliation-country": "China"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85111947681&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/85111947681",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "classical_ml",
+      "ai_methods": "classical_ml:machine learning",
+      "chip_tasks": "logic_synthesis:design automation",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
     "doc_id": "2-s2.0-85112195978",
     "stage": "fabrication",
     "year": 2021,
@@ -7880,6 +8050,40 @@
       "method_tags": "reinforcement_learning",
       "ai_methods": "reinforcement_learning:reinforcement learning",
       "chip_tasks": "routing:routing",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
+    "doc_id": "2-s2.0-85120068512",
+    "stage": "in_field",
+    "year": 2022,
+    "title": "Improving Fault Tolerance for Reliable DNN Using Boundary-Aware Activation",
+    "creator": "Zhan J.",
+    "publication": "IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems",
+    "doi": "10.1109/TCAD.2021.3129114",
+    "volume": "41",
+    "issue": "10",
+    "pages": "3414-3425",
+    "cover_date": "2022-10-01",
+    "cited_by_count": "37",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "University of Electronic Science and Technology of China",
+        "affiliation-city": "Chengdu",
+        "affiliation-country": "China"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85120068512&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/85120068512",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "deep_learning",
+      "ai_methods": "deep_learning:dnn",
+      "chip_tasks": "reliability_analysis:fault tolerance",
       "hw_artifacts": null,
       "ai_workloads": null
     }
@@ -9285,6 +9489,40 @@
     }
   },
   {
+    "doc_id": "2-s2.0-85140778690",
+    "stage": "packaging",
+    "year": 2022,
+    "title": "NeuroMap: Efficient Task Mapping of Deep Neural Networks for Dynamic Thermal Management in High-Bandwidth Memory",
+    "creator": "Pandey S.",
+    "publication": "IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems",
+    "doi": "10.1109/TCAD.2022.3197698",
+    "volume": "41",
+    "issue": "11",
+    "pages": "3602-3613",
+    "cover_date": "2022-11-01",
+    "cited_by_count": "14",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "Indian Institute of Technology Delhi",
+        "affiliation-city": "New Delhi",
+        "affiliation-country": "India"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85140778690&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/85140778690",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "deep_learning",
+      "ai_methods": "deep_learning:deep neural",
+      "chip_tasks": "thermal_management:thermal management",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
     "doc_id": "2-s2.0-85143701543",
     "stage": "design",
     "year": 2022,
@@ -10249,6 +10487,46 @@
     }
   },
   {
+    "doc_id": "2-s2.0-85141542248",
+    "stage": "fabrication",
+    "year": 2023,
+    "title": "Machine Learning-Based Edge Placement Error Analysis and Optimization: A Systematic Review",
+    "creator": "Ngo A.T.",
+    "publication": "IEEE Transactions on Semiconductor Manufacturing",
+    "doi": "10.1109/TSM.2022.3217326",
+    "volume": "36",
+    "issue": "1",
+    "pages": "1-13",
+    "cover_date": "2023-02-01",
+    "cited_by_count": "15",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "Heriot-Watt University",
+        "affiliation-city": "Edinburgh",
+        "affiliation-country": "United Kingdom"
+      },
+      {
+        "@_fa": "true",
+        "affilname": "Interuniversity Microelectronics Centre",
+        "affiliation-city": "Leuven",
+        "affiliation-country": "Belgium"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85141542248&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/85141542248",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "classical_ml; general_ml_signals",
+      "ai_methods": "classical_ml:machine learning; general_ml_signals:learning-based",
+      "chip_tasks": "placement:placement",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
     "doc_id": "2-s2.0-85142758969",
     "stage": "fabrication",
     "year": 2023,
@@ -10794,6 +11072,46 @@
       "method_tags": "reinforcement_learning",
       "ai_methods": "reinforcement_learning:reinforcement learning",
       "chip_tasks": "placement:floorplanning",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
+    "doc_id": "2-s2.0-85152615243",
+    "stage": "design",
+    "year": 2023,
+    "title": "A Comprehensive Survey on Electronic Design Automation and Graph Neural Networks: Theory and Applications",
+    "creator": "S\u00e1nchez D.",
+    "publication": "ACM Transactions on Design Automation of Electronic Systems",
+    "doi": "10.1145/3543853",
+    "volume": "28",
+    "issue": "2",
+    "pages": null,
+    "cover_date": "2023-02-21",
+    "cited_by_count": "49",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "Technische Universit\u00e4t M\u00fcnchen",
+        "affiliation-city": "Munich",
+        "affiliation-country": "Germany"
+      },
+      {
+        "@_fa": "true",
+        "affilname": "Infineon Technologies AG",
+        "affiliation-city": "Neubiberg",
+        "affiliation-country": "Germany"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85152615243&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/85152615243",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "deep_learning; graph_neural_networks",
+      "ai_methods": "deep_learning:neural network; graph_neural_networks:graph neural",
+      "chip_tasks": "logic_synthesis:design automation",
       "hw_artifacts": null,
       "ai_workloads": null
     }
@@ -11668,6 +11986,46 @@
       "method_tags": "general_ml_signals",
       "ai_methods": "general_ml_signals:learning-based",
       "chip_tasks": "placement:floorplanning; thermal_management:thermal-aware",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
+    "doc_id": "2-s2.0-85178152074",
+    "stage": "in_field",
+    "year": 2023,
+    "title": "Machine learning attacks resistant strong PUF design utilizing response obfuscates challenge with lower hardware overhead",
+    "creator": "Ma X.",
+    "publication": "Microelectronics Journal",
+    "doi": "10.1016/j.mejo.2023.105977",
+    "volume": "142",
+    "issue": null,
+    "pages": null,
+    "cover_date": "2023-12-01",
+    "cited_by_count": "21",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "Ningbo University",
+        "affiliation-city": "Ningbo",
+        "affiliation-country": "China"
+      },
+      {
+        "@_fa": "true",
+        "affilname": "Wenzhou University of Technology",
+        "affiliation-city": "Wenzhou",
+        "affiliation-country": "China"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85178152074&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/85178152074",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "classical_ml",
+      "ai_methods": "classical_ml:machine learning",
+      "chip_tasks": "security_analysis:puf",
       "hw_artifacts": null,
       "ai_workloads": null
     }
@@ -16305,6 +16663,40 @@
     }
   },
   {
+    "doc_id": "2-s2.0-105005553583",
+    "stage": "design",
+    "year": 2025,
+    "title": "A Survey of Research in Large Language Models for Electronic Design Automation",
+    "creator": "Pan J.",
+    "publication": "ACM Transactions on Design Automation of Electronic Systems",
+    "doi": "10.1145/3715324",
+    "volume": "30",
+    "issue": "3",
+    "pages": null,
+    "cover_date": "2025-02-24",
+    "cited_by_count": "26",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "Pratt School of Engineering",
+        "affiliation-city": "Durham",
+        "affiliation-country": "United States"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105005553583&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/105005553583",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "llm_foundation_models",
+      "ai_methods": "llm_foundation_models:large language model",
+      "chip_tasks": "logic_synthesis:design automation",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
     "doc_id": "2-s2.0-105005602057",
     "stage": "fabrication",
     "year": 2025,
@@ -17872,6 +18264,40 @@
       "method_tags": "graph_neural_networks",
       "ai_methods": "graph_neural_networks:gnn",
       "chip_tasks": "routing:routing",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
+    "doc_id": "2-s2.0-105017851996",
+    "stage": "in_field",
+    "year": 2025,
+    "title": "Digital Twin-driven cross-domain fault diagnosis for axial piston pumps via deep transfer learning under small-sample condition",
+    "creator": "Ma C.",
+    "publication": "Journal of Industrial Information Integration",
+    "doi": "10.1016/j.jii.2025.100966",
+    "volume": "48",
+    "issue": null,
+    "pages": null,
+    "cover_date": "2025-11-01",
+    "cited_by_count": "4",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "Chongqing University",
+        "affiliation-city": "Chongqing",
+        "affiliation-country": "China"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105017851996&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/105017851996",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "transfer_learning",
+      "ai_methods": "transfer_learning:transfer learning",
+      "chip_tasks": "fault_diagnosis:fault diagnosis",
       "hw_artifacts": null,
       "ai_workloads": null
     }
@@ -20873,6 +21299,40 @@
       "method_tags": "general_ml_signals",
       "ai_methods": "general_ml_signals:prediction model",
       "chip_tasks": "placement:placement; logic_synthesis:logic synthesis",
+      "hw_artifacts": null,
+      "ai_workloads": null
+    }
+  },
+  {
+    "doc_id": "2-s2.0-105031529944",
+    "stage": "in_field",
+    "year": 2026,
+    "title": "A Novel Grid-Based, Reconfigurable Strong PUF Architecture Integrated with MRAM, Resilient to Learning-Based Inference",
+    "creator": "Bahador A.",
+    "publication": "IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems",
+    "doi": "10.1109/TCAD.2026.3667088",
+    "volume": null,
+    "issue": null,
+    "pages": null,
+    "cover_date": "2026-01-01",
+    "cited_by_count": "0",
+    "affiliations": [
+      {
+        "@_fa": "true",
+        "affilname": "Shahid Beheshti University",
+        "affiliation-city": "Tehran",
+        "affiliation-country": "Iran"
+      }
+    ],
+    "scopus_url": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031529944&origin=inward",
+    "abstract_url": "https://api.elsevier.com/content/abstract/scopus_id/105031529944",
+    "slr_classification": {
+      "classification": "ai_for_chips",
+      "confidence": "high",
+      "reasoning": "AI method applied to chip design task",
+      "method_tags": "general_ml_signals",
+      "ai_methods": "general_ml_signals:learning-based",
+      "chip_tasks": "security_analysis:puf",
       "hw_artifacts": null,
       "ai_workloads": null
     }
