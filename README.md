@@ -35,6 +35,7 @@ Retrieval covers six lifecycle phases across three passes — one journal (`SRCT
 | `patents_vs_publications_strict.csv` | Per-company patent families against papers in the analysed corpus. |
 | `patents_vs_publications.csv` | The looser OR-based magnitude reference. |
 | `case_study_patents.csv` | Patent probes for three case-study papers. |
+| `patent_queries.sql` | The complete, expanded BigQuery queries that produced the five patent files above — readable and pasteable into the BigQuery console. Generated from the retrieval script itself (`analysis/patent_analysis.py --print-sql` in the code repository), so it cannot drift from the code that ran. |
 | `geo_forecast.csv` + `.md` | Per-country leadership metrics: CAGR, share trajectory, P1/P2 phase comparison. |
 | `openalex_cache/openalex_ai4chips.json` | OpenAlex metadata (citation counts, full author lists, reference lists) for the AI-for-Chips subset. |
 | `abstracts_cache.json`, `abstracts_openalex.json` | Abstracts per DOI, retrieved via OpenAlex with a Semantic Scholar fallback (92.3% coverage). |
@@ -114,7 +115,7 @@ This dataset snapshot corresponds to code commit `f83c5ab` of [AI4Chips_SLR](htt
 
 The previous snapshot — the journal-only corpus accompanying the **submitted** manuscript, N = 5,531 screened and 321 high-confidence — is preserved at tag [`snapshot-submitted`](https://github.com/ignaciosim/AI4Chips_SLR_data/releases/tag/snapshot-submitted) so that the figures in the submitted version remain auditable. The two differ in more than corpus size: the revision added conference proceedings, corrected the ontology matcher from substring to word-boundary matching, and collapsed extended-version duplicates. Numbers are not comparable between the two snapshots without reading the code repository's commit history.
 
-Patent counts are reproducible only against a dated snapshot of Google Patents Public Data: the identical query returned 48 families in April 2026 and 233 in August 2026, the April result being a strict subset of the August one. The figures here are the snapshot of **26 August 2026**.
+Patent counts are reproducible only against a dated snapshot of Google Patents Public Data: the identical query — `corpus/patent_queries.sql`, unchanged in text between the two runs — returned 48 families in April 2026 and 233 in August 2026, the April result being a strict subset of the August one. The figures here are the snapshot of **26 August 2026**. Re-running the query today will return more families again; that is a property of the underlying dataset, not of the criterion.
 
 Earlier pipeline runs are historical artefacts not preserved here.
 
